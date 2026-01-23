@@ -64,23 +64,24 @@ header h1 {
 }
 
 .mint-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(30, 30, 30, 0.9);
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
     max-width: 500px;
     margin: 0 auto 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
 }
 
 .mint-card h2 {
     margin-bottom: 1rem;
-    color: #fff;
+    color: #ffd700;
 }
 
 .price {
     font-size: 1.5rem;
-    color: #00d4ff;
+    color: #ffd700;
     margin-bottom: 1.5rem;
 }
 
@@ -101,12 +102,13 @@ header h1 {
 .rarity.common { background: rgba(156, 163, 175, 0.3); color: #9ca3af; }
 .rarity.rare { background: rgba(59, 130, 246, 0.3); color: #3b82f6; }
 .rarity.epic { background: rgba(168, 85, 247, 0.3); color: #a855f7; }
-.rarity.legendary { background: rgba(245, 158, 11, 0.3); color: #f59e0b; }
+.rarity.legendary { background: rgba(255, 215, 0, 0.3); color: #ffd700; }
 
 #mint-btn {
-    background: linear-gradient(90deg, #10b981, #059669);
+    background: linear-gradient(90deg, #ffd700, #b8860b);
     border: none;
-    color: white;
+    color: #000;
+    font-weight: bold;
     padding: 1rem 2rem;
     font-size: 1.1rem;
     border-radius: 12px;
@@ -117,7 +119,7 @@ header h1 {
 
 #mint-btn:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
 }
 
 #mint-btn:disabled {
