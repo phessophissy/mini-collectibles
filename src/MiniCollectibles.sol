@@ -6,6 +6,7 @@ import "./ICollectible.sol";
 contract MiniCollectibles is ICollectible {
     string public name = "Mini Collectibles";
     string public symbol = "MCOL";
+    string public baseURI;
     
     uint256 public constant MINT_PRICE = 0.000012 ether;
     uint256 private _tokenIdCounter;
