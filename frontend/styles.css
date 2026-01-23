@@ -139,7 +139,7 @@ header h1 {
 
 .stat-label {
     display: block;
-    color: #a0a0a0;
+    color: #b8860b;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
@@ -148,7 +148,7 @@ header h1 {
     display: block;
     font-size: 2rem;
     font-weight: bold;
-    color: #00d4ff;
+    color: #ffd700;
 }
 
 .modal {
@@ -157,7 +157,7 @@ header h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,17 +165,19 @@ header h1 {
 }
 
 .modal-content {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
     max-width: 400px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
 }
 
 .modal-content h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #ffd700;
 }
 
 .modal-content p {
@@ -185,9 +187,10 @@ header h1 {
 
 #close-modal {
     margin-top: 1.5rem;
-    background: #0052ff;
+    background: linear-gradient(90deg, #ffd700, #daa520);
     border: none;
-    color: white;
+    color: #000;
+    font-weight: bold;
     padding: 0.75rem 2rem;
     border-radius: 8px;
     cursor: pointer;
