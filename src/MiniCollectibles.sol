@@ -15,6 +15,7 @@ contract MiniCollectibles is ICollectible {
     mapping(address => uint256) private _balances;
     mapping(uint256 => CollectibleType) private _collectibleTypes;
     mapping(uint256 => string) private _tokenURIs;
+    mapping(uint256 => address) private _tokenApprovals;
     
     constructor() {
         owner = msg.sender;
