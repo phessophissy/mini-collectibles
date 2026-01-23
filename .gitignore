@@ -24,3 +24,7 @@ docs/
 
 # Coverage
 lcov.info
+wallets.json
+scripts/.env
+scripts/node_modules
+mint-results.json

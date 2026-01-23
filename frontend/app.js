@@ -1,5 +1,5 @@
 // Mini Collectibles Frontend
-const CONTRACT_ADDRESS = "0x0000000000000000000000000000000000000000"; // Replace after deployment
+const CONTRACT_ADDRESS = "0xEA3FD9Ff43E1C75ff600E9b18172280bd1b0A820"; // Deployed on Base Mainnet
 const BASE_CHAIN_ID = "0x2105"; // Base Mainnet (8453)
 const MINT_PRICE = "0.000012";
 
