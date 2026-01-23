@@ -28,3 +28,8 @@ wallets.json
 scripts/.env
 scripts/node_modules
 mint-results.json
+
+# Sensitive files - NEVER COMMIT
+scripts/wallets.json
+*.pem
+*.key
