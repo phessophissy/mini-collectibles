@@ -30,4 +30,9 @@ contract MiniCollectibles is ICollectible {
         require(tokenOwner != address(0), "Token does not exist");
         return tokenOwner;
     }
+    
+    function balanceOf(address account) public view returns (uint256) {
+        require(account != address(0), "Zero address");
+        return _balances[account];
+    }
 }
