@@ -76,4 +76,13 @@ contract MiniCollectibles is ICollectible {
         
         return tokenId;
     }
+    
+    function approve(address to, uint256 tokenId) external {
+        address tokenOwner = ownerOf(tokenId);
+        require(msg.sender == tokenOwner, "Not token owner");
+        require(to != tokenOwner, "Cannot approve self");
+        
+        _tokenApprovals[tokenId] = to;
+        emit Approval(tokenOwner, to, tokenId);
+    }
 }
