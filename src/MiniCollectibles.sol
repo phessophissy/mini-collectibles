@@ -56,4 +56,19 @@ contract MiniCollectibles is ICollectible {
         if (rand < 95) return CollectibleType.EPIC;
         return CollectibleType.LEGENDARY;
     }
+    
+    function mint() external payable returns (uint256) {
+        require(msg.value == MINT_PRICE, "Incorrect mint price");
+        
+        uint256 tokenId = _tokenIdCounter;
+        _tokenIdCounter++;
+        
+        _owners[tokenId] = msg.sender;
+        _balances[msg.sender]++;
+        _collectibleTypes[tokenId] = _determineType(tokenId);
+        
+        emit CollectibleMinted(msg.sender, tokenId, _collectibleTypes[tokenId]);
+        
+        return tokenId;
+    }
 }
