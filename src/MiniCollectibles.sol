@@ -126,4 +126,34 @@ contract MiniCollectibles is ICollectible {
         baseURI = newBaseURI;
         emit BaseURIUpdated(newBaseURI);
     }
+    
+    function tokenURI(uint256 tokenId) external view returns (string memory) {
+        require(_owners[tokenId] != address(0), "Token does not exist");
+        
+        string memory individualURI = _tokenURIs[tokenId];
+        if (bytes(individualURI).length > 0) {
+            return individualURI;
+        }
+        
+        return string(abi.encodePacked(baseURI, _toString(tokenId)));
+    }
+    
+    function _toString(uint256 value) internal pure returns (string memory) {
+        if (value == 0) {
+            return "0";
+        }
+        uint256 temp = value;
+        uint256 digits;
+        while (temp != 0) {
+            digits++;
+            temp /= 10;
+        }
+        bytes memory buffer = new bytes(digits);
+        while (value != 0) {
+            digits -= 1;
+            buffer[digits] = bytes1(uint8(48 + uint256(value % 10)));
+            value /= 10;
+        }
+        return string(buffer);
+    }
 }
