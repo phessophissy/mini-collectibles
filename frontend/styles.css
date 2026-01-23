@@ -101,3 +101,49 @@ header h1 {
 .rarity.rare { background: rgba(59, 130, 246, 0.3); color: #3b82f6; }
 .rarity.epic { background: rgba(168, 85, 247, 0.3); color: #a855f7; }
 .rarity.legendary { background: rgba(245, 158, 11, 0.3); color: #f59e0b; }
+
+#mint-btn {
+    background: linear-gradient(90deg, #10b981, #059669);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+
+#mint-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+}
+
+#mint-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00d4ff;
+}
