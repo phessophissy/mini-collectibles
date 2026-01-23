@@ -19,6 +19,7 @@ contract MiniCollectibles is ICollectible {
     
     event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
     event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId);
+    event Withdrawal(address indexed to, uint256 amount);
     
     constructor() {
         owner = msg.sender;
