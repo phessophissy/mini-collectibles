@@ -64,6 +64,23 @@ contract MiniCollectibles is ICollectible {
         return CollectibleType.LEGENDARY;
     }
     
+    function _toString(uint256 value) internal pure returns (string memory) {
+        if (value == 0) return "0";
+        uint256 temp = value;
+        uint256 digits;
+        while (temp != 0) {
+            digits++;
+            temp /= 10;
+        }
+        bytes memory buffer = new bytes(digits);
+        while (value != 0) {
+            digits -= 1;
+            buffer[digits] = bytes1(uint8(48 + uint256(value % 10)));
+            value /= 10;
+        }
+        return string(buffer);
+    }
+    
     function mint() external payable returns (uint256) {
         require(msg.value == MINT_PRICE, "Incorrect mint price");
         
@@ -112,6 +129,16 @@ contract MiniCollectibles is ICollectible {
         return (spender == tokenOwner || getApproved(tokenId) == spender);
     }
     
+    function tokenURI(uint256 tokenId) external view returns (string memory) {
+        require(_owners[tokenId] != address(0), "Token does not exist");
+        return string(abi.encodePacked(baseURI, _toString(tokenId)));
+    }
+    
+    function setBaseURI(string calldata newBaseURI) external onlyOwner {
+        baseURI = newBaseURI;
+        emit BaseURIUpdated(newBaseURI);
+    }
+    
     function withdraw() external onlyOwner {
         uint256 balance = address(this).balance;
         require(balance > 0, "No balance to withdraw");
@@ -120,40 +147,5 @@ contract MiniCollectibles is ICollectible {
         require(success, "Withdrawal failed");
         
         emit Withdrawal(owner, balance);
-    }
-    
-    function setBaseURI(string memory newBaseURI) external onlyOwner {
-        baseURI = newBaseURI;
-        emit BaseURIUpdated(newBaseURI);
-    }
-    
-    function tokenURI(uint256 tokenId) external view returns (string memory) {
-        require(_owners[tokenId] != address(0), "Token does not exist");
-        
-        string memory individualURI = _tokenURIs[tokenId];
-        if (bytes(individualURI).length > 0) {
-            return individualURI;
-        }
-        
-        return string(abi.encodePacked(baseURI, _toString(tokenId)));
-    }
-    
-    function _toString(uint256 value) internal pure returns (string memory) {
-        if (value == 0) {
-            return "0";
-        }
-        uint256 temp = value;
-        uint256 digits;
-        while (temp != 0) {
-            digits++;
-            temp /= 10;
-        }
-        bytes memory buffer = new bytes(digits);
-        while (value != 0) {
-            digits -= 1;
-            buffer[digits] = bytes1(uint8(48 + uint256(value % 10)));
-            value /= 10;
-        }
-        return string(buffer);
     }
 }
