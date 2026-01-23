@@ -134,3 +134,28 @@ async function updateStats() {
         console.error("Failed to fetch stats:", error);
     }
 }
+
+// Show mint success modal
+function showMintSuccess(tokenId, collectibleType) {
+    const modal = document.getElementById("success-modal");
+    const rarityName = RARITY_TYPES[collectibleType];
+    const rarityColor = RARITY_COLORS[collectibleType];
+    
+    document.getElementById("minted-token-id").textContent = tokenId.toString();
+    document.getElementById("minted-rarity").textContent = rarityName;
+    document.getElementById("minted-rarity").style.color = rarityColor;
+    
+    modal.style.display = "flex";
+}
+
+// Close modal
+function closeModal() {
+    document.getElementById("success-modal").style.display = "none";
+}
+
+// Event listeners
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("connect-btn").addEventListener("click", connectWallet);
+    document.getElementById("mint-btn")?.addEventListener("click", mintCollectible);
+    document.getElementById("close-modal")?.addEventListener("click", closeModal);
+});
