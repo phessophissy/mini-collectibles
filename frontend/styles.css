@@ -34,3 +34,30 @@ header h1 {
     color: #a0a0a0;
     font-size: 1.2rem;
 }
+
+#connect-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#connect-btn {
+    background: linear-gradient(90deg, #0052ff, #0066ff);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#connect-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 82, 255, 0.3);
+}
+
+#wallet-address {
+    margin-top: 1rem;
+    color: #00d4ff;
+    font-family: monospace;
+}
