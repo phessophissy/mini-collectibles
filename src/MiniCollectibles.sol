@@ -21,6 +21,7 @@ contract MiniCollectibles is ICollectible {
     event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
     event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId);
     event Withdrawal(address indexed to, uint256 amount);
+    event BaseURIUpdated(string newBaseURI);
     
     constructor() {
         owner = msg.sender;
@@ -119,5 +120,10 @@ contract MiniCollectibles is ICollectible {
         require(success, "Withdrawal failed");
         
         emit Withdrawal(owner, balance);
+    }
+    
+    function setBaseURI(string memory newBaseURI) external onlyOwner {
+        baseURI = newBaseURI;
+        emit BaseURIUpdated(newBaseURI);
     }
 }
