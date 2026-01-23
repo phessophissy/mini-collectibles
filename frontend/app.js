@@ -107,3 +107,30 @@ async function mintCollectible() {
         mintBtn.textContent = "Mint Collectible (0.000012 ETH)";
     }
 }
+
+// Update UI after connection
+function updateUI(address) {
+    document.getElementById("connect-btn").textContent = "Connected";
+    document.getElementById("connect-btn").disabled = true;
+    document.getElementById("wallet-address").textContent = 
+        address.slice(0, 6) + "..." + address.slice(-4);
+    
+    document.getElementById("mint-section").style.display = "block";
+    updateStats();
+}
+
+// Update stats display
+async function updateStats() {
+    if (!contract) return;
+    
+    try {
+        const totalSupply = await contract.totalSupply();
+        const userAddress = await signer.getAddress();
+        const userBalance = await contract.balanceOf(userAddress);
+        
+        document.getElementById("total-supply").textContent = totalSupply.toString();
+        document.getElementById("your-balance").textContent = userBalance.toString();
+    } catch (error) {
+        console.error("Failed to fetch stats:", error);
+    }
+}
