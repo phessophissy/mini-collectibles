@@ -35,4 +35,8 @@ contract MiniCollectibles is ICollectible {
         require(account != address(0), "Zero address");
         return _balances[account];
     }
+    
+    function getMintPrice() external pure returns (uint256) {
+        return MINT_PRICE;
+    }
 }
