@@ -5,19 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Collectibles - Base Chain NFT Platform</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.9.0/ethers.umd.min.js"></script>
 </head>
 <body>
     <div id="app">
         <header>
-            <h1>Mini Collectibles</h1>
+            <h1>🎨 Mini Collectibles</h1>
             <p class="subtitle">Mint unique collectibles on Base Chain</p>
         </header>
+        
         <main>
             <section id="connect-section">
                 <button id="connect-btn">Connect Wallet</button>
                 <p id="wallet-address"></p>
             </section>
+            
+            <section id="mint-section" style="display: none;">
+                <div class="mint-card">
+                    <h2>Mint Your Collectible</h2>
+                    <p class="price">Price: 0.000012 ETH</p>
+                    <div class="rarities">
+                        <span class="rarity common">Common 50%</span>
+                        <span class="rarity rare">Rare 30%</span>
+                        <span class="rarity epic">Epic 15%</span>
+                        <span class="rarity legendary">Legendary 5%</span>
+                    </div>
+                    <button id="mint-btn">Mint Collectible (0.000012 ETH)</button>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-label">Total Minted</span>
+                        <span id="total-supply" class="stat-value">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Your Collection</span>
+                        <span id="your-balance" class="stat-value">0</span>
+                    </div>
+                </div>
+            </section>
         </main>
+        
+        <div id="success-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h2>🎉 Congratulations!</h2>
+                <p>You minted Token #<span id="minted-token-id"></span></p>
+                <p>Rarity: <span id="minted-rarity"></span></p>
+                <button id="close-modal">Close</button>
+            </div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
