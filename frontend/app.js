@@ -68,3 +68,42 @@ async function switchToBase() {
         }
     }
 }
+
+// Mint collectible
+async function mintCollectible() {
+    if (!contract) {
+        alert("Please connect your wallet first!");
+        return;
+    }
+    
+    try {
+        const mintBtn = document.getElementById("mint-btn");
+        mintBtn.disabled = true;
+        mintBtn.textContent = "Minting...";
+        
+        const tx = await contract.mint({
+            value: ethers.parseEther(MINT_PRICE)
+        });
+        
+        mintBtn.textContent = "Confirming...";
+        const receipt = await tx.wait();
+        
+        // Parse event to get token info
+        const event = receipt.logs.find(log => log.fragment?.name === "CollectibleMinted");
+        if (event) {
+            const tokenId = event.args[1];
+            const collectibleType = event.args[2];
+            showMintSuccess(tokenId, collectibleType);
+        }
+        
+        await updateStats();
+        mintBtn.disabled = false;
+        mintBtn.textContent = "Mint Collectible (0.000012 ETH)";
+    } catch (error) {
+        console.error("Mint failed:", error);
+        alert("Minting failed: " + error.message);
+        const mintBtn = document.getElementById("mint-btn");
+        mintBtn.disabled = false;
+        mintBtn.textContent = "Mint Collectible (0.000012 ETH)";
+    }
+}
