@@ -17,6 +17,9 @@ contract MiniCollectibles is ICollectible {
     mapping(uint256 => string) private _tokenURIs;
     mapping(uint256 => address) private _tokenApprovals;
     
+    event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
+    event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId);
+    
     constructor() {
         owner = msg.sender;
     }
