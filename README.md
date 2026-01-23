@@ -12,22 +12,12 @@ A collectible NFT platform on Base Chain (mainnet) where users can mint unique c
 
 ## Quick Start
 
-### Smart Contracts
+### Deploy with Remix
 
-```bash
-# Install Foundry
-curl -L https://foundry.paradigm.xyz | bash
-foundryup
-
-# Build
-forge build
-
-# Test
-forge test
-
-# Deploy to Base
-forge script script/Deploy.s.sol --rpc-url base --broadcast
-```
+1. Open [Remix IDE](https://remix.ethereum.org)
+2. Create a new file and paste the contents of `src/MiniCollectibles_Remix.sol`
+3. Compile with Solidity 0.8.24
+4. Deploy to Base Mainnet via MetaMask
 
 ### Frontend
 
@@ -57,17 +47,16 @@ npx serve .
 ```
 mini-collectibles/
 ├── src/
-│   ├── MiniCollectibles.sol    # Main NFT contract
-│   └── ICollectible.sol        # Interface
-├── script/
-│   └── Deploy.s.sol            # Deployment script
+│   ├── MiniCollectibles.sol        # Main NFT contract
+│   ├── MiniCollectibles_Remix.sol  # Flattened for Remix
+│   └── ICollectible.sol            # Interface
 ├── test/
-│   └── MiniCollectibles.t.sol  # Tests
+│   └── MiniCollectibles.t.sol      # Tests
 ├── frontend/
-│   ├── index.html              # Web interface
-│   ├── styles.css              # Styling
-│   └── app.js                  # Web3 logic
-└── foundry.toml                # Foundry config
+│   ├── index.html                  # Web interface
+│   ├── styles.css                  # Styling
+│   └── app.js                      # Web3 logic
+└── foundry.toml                    # Foundry config
 ```
 
 ## License

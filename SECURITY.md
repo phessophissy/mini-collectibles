@@ -20,7 +20,6 @@ If you discover a security vulnerability, please report it responsibly:
 
 The following are in scope for security reports:
 - Smart contracts in the `src/` directory
-- Deployment scripts in the `script/` directory
 
 ## Bug Bounty
 

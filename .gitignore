@@ -24,12 +24,8 @@ docs/
 
 # Coverage
 lcov.info
-wallets.json
-scripts/.env
-scripts/node_modules
-mint-results.json
 
 # Sensitive files - NEVER COMMIT
-scripts/wallets.json
+wallets.json
 *.pem
 *.key
