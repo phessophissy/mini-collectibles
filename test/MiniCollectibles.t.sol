@@ -9,4 +9,8 @@ contract MiniCollectiblesTest {
     function setUp() public {
         collectibles = new MiniCollectibles();
     }
+    
+    function testMintPrice() public view {
+        assert(collectibles.getMintPrice() == 0.000012 ether);
+    }
 }
