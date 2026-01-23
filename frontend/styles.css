@@ -24,14 +24,14 @@ header {
 
 header h1 {
     font-size: 3rem;
-    background: linear-gradient(90deg, #0052ff, #00d4ff);
+    background: linear-gradient(90deg, #ffd700, #ffb800);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
 }
 
 .subtitle {
-    color: #a0a0a0;
+    color: #b8860b;
     font-size: 1.2rem;
 }
 
@@ -41,9 +41,10 @@ header h1 {
 }
 
 #connect-btn {
-    background: linear-gradient(90deg, #0052ff, #0066ff);
+    background: linear-gradient(90deg, #ffd700, #daa520);
     border: none;
-    color: white;
+    color: #000;
+    font-weight: bold;
     padding: 1rem 2rem;
     font-size: 1.1rem;
     border-radius: 12px;
@@ -53,12 +54,12 @@ header h1 {
 
 #connect-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 82, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
 }
 
 #wallet-address {
     margin-top: 1rem;
-    color: #00d4ff;
+    color: #ffd700;
     font-family: monospace;
 }
 
