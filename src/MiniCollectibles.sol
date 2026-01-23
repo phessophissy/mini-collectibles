@@ -85,4 +85,9 @@ contract MiniCollectibles is ICollectible {
         _tokenApprovals[tokenId] = to;
         emit Approval(tokenOwner, to, tokenId);
     }
+    
+    function getApproved(uint256 tokenId) public view returns (address) {
+        require(_owners[tokenId] != address(0), "Token does not exist");
+        return _tokenApprovals[tokenId];
+    }
 }
