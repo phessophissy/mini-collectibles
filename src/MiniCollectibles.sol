@@ -14,6 +14,7 @@ contract MiniCollectibles is ICollectible {
     mapping(uint256 => address) private _owners;
     mapping(address => uint256) private _balances;
     mapping(uint256 => CollectibleType) private _collectibleTypes;
+    mapping(uint256 => string) private _tokenURIs;
     
     constructor() {
         owner = msg.sender;
@@ -22,5 +23,11 @@ contract MiniCollectibles is ICollectible {
     modifier onlyOwner() {
         require(msg.sender == owner, "Not owner");
         _;
+    }
+    
+    function ownerOf(uint256 tokenId) public view returns (address) {
+        address tokenOwner = _owners[tokenId];
+        require(tokenOwner != address(0), "Token does not exist");
+        return tokenOwner;
     }
 }
