@@ -72,6 +72,7 @@ contract MiniCollectibles is ICollectible {
         _collectibleTypes[tokenId] = _determineType(tokenId);
         
         emit CollectibleMinted(msg.sender, tokenId, _collectibleTypes[tokenId]);
+        emit Transfer(address(0), msg.sender, tokenId);
         
         return tokenId;
     }
