@@ -109,4 +109,14 @@ contract MiniCollectibles is ICollectible {
         address tokenOwner = ownerOf(tokenId);
         return (spender == tokenOwner || getApproved(tokenId) == spender);
     }
+    
+    function withdraw() external onlyOwner {
+        uint256 balance = address(this).balance;
+        require(balance > 0, "No balance to withdraw");
+        
+        (bool success, ) = payable(owner).call{value: balance}("");
+        require(success, "Withdrawal failed");
+        
+        emit Withdrawal(owner, balance);
+    }
 }
