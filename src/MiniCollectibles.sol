@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.24;
+
+import "./ICollectible.sol";
+
+contract MiniCollectibles is ICollectible {
+    string public name = "Mini Collectibles";
+    string public symbol = "MCOL";
+    
+    uint256 public constant MINT_PRICE = 0.000012 ether;
+    uint256 private _tokenIdCounter;
+    address public owner;
+    
+    mapping(uint256 => address) private _owners;
+    mapping(address => uint256) private _balances;
+    mapping(uint256 => CollectibleType) private _collectibleTypes;
+    
+    constructor() {
+        owner = msg.sender;
+    }
+    
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Not owner");
+        _;
+    }
+}
