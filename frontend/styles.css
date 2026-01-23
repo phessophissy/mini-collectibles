@@ -61,3 +61,43 @@ header h1 {
     color: #00d4ff;
     font-family: monospace;
 }
+
+.mint-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mint-card h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #00d4ff;
+    margin-bottom: 1.5rem;
+}
+
+.rarities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.rarity {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.rarity.common { background: rgba(156, 163, 175, 0.3); color: #9ca3af; }
+.rarity.rare { background: rgba(59, 130, 246, 0.3); color: #3b82f6; }
+.rarity.epic { background: rgba(168, 85, 247, 0.3); color: #a855f7; }
+.rarity.legendary { background: rgba(245, 158, 11, 0.3); color: #f59e0b; }
