@@ -1,3 +1,4 @@
+/* Mini Collectibles - Gold & Black Theme */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #0d0d0d 100%);
     min-height: 100vh;
     color: #fff;
 }
@@ -24,10 +25,11 @@ header {
 
 header h1 {
     font-size: 3rem;
-    background: linear-gradient(90deg, #ffd700, #ffb800);
+    background: linear-gradient(90deg, #ffd700, #ffb800, #ffd700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
 }
 
 .subtitle {
@@ -42,7 +44,7 @@ header h1 {
 
 #connect-btn {
     background: linear-gradient(90deg, #ffd700, #daa520);
-    border: none;
+    border: 2px solid #ffd700;
     color: #000;
     font-weight: bold;
     padding: 1rem 2rem;
@@ -54,35 +56,41 @@ header h1 {
 
 #connect-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.5);
 }
 
 #wallet-address {
     margin-top: 1rem;
     color: #ffd700;
     font-family: monospace;
+    background: rgba(255, 215, 0, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: inline-block;
 }
 
 .mint-card {
-    background: rgba(30, 30, 30, 0.9);
+    background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(30, 30, 30, 0.95) 100%);
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
     max-width: 500px;
     margin: 0 auto 2rem;
     border: 2px solid #ffd700;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .mint-card h2 {
     margin-bottom: 1rem;
     color: #ffd700;
+    font-size: 1.8rem;
 }
 
 .price {
     font-size: 1.5rem;
     color: #ffd700;
     margin-bottom: 1.5rem;
+    font-weight: bold;
 }
 
 .rarities {
@@ -97,16 +105,17 @@ header h1 {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
+    border: 1px solid transparent;
 }
 
-.rarity.common { background: rgba(156, 163, 175, 0.3); color: #9ca3af; }
-.rarity.rare { background: rgba(59, 130, 246, 0.3); color: #3b82f6; }
-.rarity.epic { background: rgba(168, 85, 247, 0.3); color: #a855f7; }
-.rarity.legendary { background: rgba(255, 215, 0, 0.3); color: #ffd700; }
+.rarity.common { background: rgba(156, 163, 175, 0.2); color: #9ca3af; border-color: #9ca3af; }
+.rarity.rare { background: rgba(59, 130, 246, 0.2); color: #3b82f6; border-color: #3b82f6; }
+.rarity.epic { background: rgba(168, 85, 247, 0.2); color: #a855f7; border-color: #a855f7; }
+.rarity.legendary { background: rgba(255, 215, 0, 0.2); color: #ffd700; border-color: #ffd700; }
 
 #mint-btn {
     background: linear-gradient(90deg, #ffd700, #b8860b);
-    border: none;
+    border: 2px solid #ffd700;
     color: #000;
     font-weight: bold;
     padding: 1rem 2rem;
@@ -119,7 +128,7 @@ header h1 {
 
 #mint-btn:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.5);
 }
 
 #mint-btn:disabled {
@@ -131,10 +140,15 @@ header h1 {
     display: flex;
     justify-content: center;
     gap: 3rem;
+    margin-top: 2rem;
 }
 
 .stat {
     text-align: center;
+    background: rgba(255, 215, 0, 0.05);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
 }
 
 .stat-label {
@@ -157,7 +171,7 @@ header h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,11 +181,11 @@ header h1 {
 .modal-content {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     border-radius: 20px;
-    padding: 2rem;
+    padding: 2.5rem;
     text-align: center;
     max-width: 400px;
     border: 2px solid #ffd700;
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.4);
 }
 
 .modal-content h2 {
@@ -183,15 +197,22 @@ header h1 {
 .modal-content p {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
+    color: #fff;
 }
 
 #close-modal {
     margin-top: 1.5rem;
     background: linear-gradient(90deg, #ffd700, #daa520);
-    border: none;
+    border: 2px solid #ffd700;
     color: #000;
     font-weight: bold;
     padding: 0.75rem 2rem;
     border-radius: 8px;
     cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#close-modal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
 }
