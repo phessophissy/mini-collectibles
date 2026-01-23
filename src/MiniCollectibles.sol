@@ -44,4 +44,8 @@ contract MiniCollectibles is ICollectible {
         require(_owners[tokenId] != address(0), "Token does not exist");
         return _collectibleTypes[tokenId];
     }
+    
+    function totalSupply() external view returns (uint256) {
+        return _tokenIdCounter;
+    }
 }
