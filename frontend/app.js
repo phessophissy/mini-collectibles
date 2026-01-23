@@ -45,3 +45,26 @@ async function connectWallet() {
         alert("Failed to connect wallet");
     }
 }
+
+// Switch to Base Chain
+async function switchToBase() {
+    try {
+        await window.ethereum.request({
+            method: "wallet_switchEthereumChain",
+            params: [{ chainId: BASE_CHAIN_ID }]
+        });
+    } catch (switchError) {
+        if (switchError.code === 4902) {
+            await window.ethereum.request({
+                method: "wallet_addEthereumChain",
+                params: [{
+                    chainId: BASE_CHAIN_ID,
+                    chainName: "Base",
+                    nativeCurrency: { name: "Ether", symbol: "ETH", decimals: 18 },
+                    rpcUrls: ["https://mainnet.base.org"],
+                    blockExplorerUrls: ["https://basescan.org"]
+                }]
+            });
+        }
+    }
+}
