@@ -39,4 +39,9 @@ contract MiniCollectibles is ICollectible {
     function getMintPrice() external pure returns (uint256) {
         return MINT_PRICE;
     }
+    
+    function getCollectibleType(uint256 tokenId) external view returns (CollectibleType) {
+        require(_owners[tokenId] != address(0), "Token does not exist");
+        return _collectibleTypes[tokenId];
+    }
 }
