@@ -48,4 +48,12 @@ contract MiniCollectibles is ICollectible {
     function totalSupply() external view returns (uint256) {
         return _tokenIdCounter;
     }
+    
+    function _determineType(uint256 tokenId) internal pure returns (CollectibleType) {
+        uint256 rand = uint256(keccak256(abi.encodePacked(tokenId))) % 100;
+        if (rand < 50) return CollectibleType.COMMON;
+        if (rand < 80) return CollectibleType.RARE;
+        if (rand < 95) return CollectibleType.EPIC;
+        return CollectibleType.LEGENDARY;
+    }
 }
