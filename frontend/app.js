@@ -7,6 +7,10 @@ let provider = null;
 let signer = null;
 let contract = null;
 
+// Rarity types and colors
+const RARITY_TYPES = ["Common", "Rare", "Epic", "Legendary"];
+const RARITY_COLORS = ["#9ca3af", "#3b82f6", "#a855f7", "#f59e0b"];
+
 // Contract ABI (minimal for minting)
 const CONTRACT_ABI = [
     "function mint() external payable returns (uint256)",
@@ -17,20 +21,16 @@ const CONTRACT_ABI = [
     "event CollectibleMinted(address indexed owner, uint256 indexed tokenId, uint8 collectibleType)"
 ];
 
-// Rarity types
-const RARITY_TYPES = ["Common", "Rare", "Epic", "Legendary"];
-const RARITY_COLORS = ["#9ca3af", "#3b82f6", "#a855f7", "#f59e0b"];
-
-// Connect wallet function
+// Connect wallet
 async function connectWallet() {
     if (typeof window.ethereum === "undefined") {
-        alert("Please install MetaMask or another Web3 wallet!");
+        alert("Please install MetaMask!");
         return;
     }
     
     try {
-        const accounts = await window.ethereum.request({
-            method: "eth_requestAccounts"
+        const accounts = await window.ethereum.request({ 
+            method: "eth_requestAccounts" 
         });
         
         await switchToBase();
@@ -42,7 +42,7 @@ async function connectWallet() {
         updateUI(accounts[0]);
     } catch (error) {
         console.error("Connection failed:", error);
-        alert("Failed to connect wallet");
+        alert("Failed to connect: " + error.message);
     }
 }
 
