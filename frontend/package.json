@@ -1,0 +1,12 @@
+{
+  "name": "mini-collectibles-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Mini Collectibles NFT Platform on Base Chain",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["nft", "base", "collectibles"],
+  "author": "",
+  "license": "MIT"
+}
