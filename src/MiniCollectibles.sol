@@ -90,4 +90,22 @@ contract MiniCollectibles is ICollectible {
         require(_owners[tokenId] != address(0), "Token does not exist");
         return _tokenApprovals[tokenId];
     }
+    
+    function transferFrom(address from, address to, uint256 tokenId) external {
+        require(_isApprovedOrOwner(msg.sender, tokenId), "Not approved or owner");
+        require(ownerOf(tokenId) == from, "From is not owner");
+        require(to != address(0), "Cannot transfer to zero address");
+        
+        _tokenApprovals[tokenId] = address(0);
+        _balances[from]--;
+        _balances[to]++;
+        _owners[tokenId] = to;
+        
+        emit Transfer(from, to, tokenId);
+    }
+    
+    function _isApprovedOrOwner(address spender, uint256 tokenId) internal view returns (bool) {
+        address tokenOwner = ownerOf(tokenId);
+        return (spender == tokenOwner || getApproved(tokenId) == spender);
+    }
 }
