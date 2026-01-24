@@ -246,3 +246,15 @@ header h1 {
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(233, 30, 99, 0.4);
 }
+
+/* Additional Hibiscus Decorations */
+.hibiscus-corner-tl {
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+}
