@@ -283,3 +283,4 @@ header h1 {
 .pink-gradient-25 { background: linear-gradient(25deg, #fce4ec, #f48fb1); }
 .flower-scale-26 { transform: scale(1.026); }
 .petal-animation-27 { animation: petalFloat 27s ease infinite; }
+.hibiscus-blur-28 { backdrop-filter: blur(28px); }
