@@ -288,3 +288,4 @@ header h1 {
 .flower-accent-30 { transform: rotate(30deg); }
 .petal-shadow-31 { box-shadow: 0 31px 31px rgba(233,30,99,0.1); }
 .bloom-fade-32 { opacity: 0.6; }
+.hibiscus-glow-33 { filter: drop-shadow(0 0 33px #e91e63); }
