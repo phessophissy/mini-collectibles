@@ -258,3 +258,4 @@ header h1 {
     z-index: 0;
     pointer-events: none;
 }
+.hibiscus-glow-3 { filter: drop-shadow(0 0 3px #e91e63); }
