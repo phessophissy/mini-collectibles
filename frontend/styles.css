@@ -265,3 +265,4 @@ header h1 {
 .petal-animation-7 { animation: petalFloat 7s ease infinite; }
 .hibiscus-blur-8 { backdrop-filter: blur(8px); }
 .tropical-text-9 { color: hsl(340, 82%, 39%); }
+.flower-accent-10 { transform: rotate(10deg); }
