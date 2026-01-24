@@ -270,3 +270,4 @@ header h1 {
 .bloom-fade-12 { opacity: 0.4; }
 .hibiscus-glow-13 { filter: drop-shadow(0 0 13px #e91e63); }
 .tropical-border-14 { border: 14px solid rgba(244,143,177,0.3); }
+.pink-gradient-15 { background: linear-gradient(15deg, #fce4ec, #f48fb1); }
