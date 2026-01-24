@@ -1,4 +1,4 @@
-/* Mini Collectibles - Gold & Black Theme */
+/* Mini Collectibles - Pink Hibiscus Theme */
 * {
     margin: 0;
     padding: 0;
@@ -7,15 +7,43 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #0d0d0d 100%);
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f48fb1 100%);
     min-height: 100vh;
-    color: #fff;
+    color: #880e4f;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Hibiscus Flower Background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    background-image: 
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg opacity='0.15'%3E%3Cpath fill='%23e91e63' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z'/%3E%3Cpath fill='%23f48fb1' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(72 50 50)'/%3E%3Cpath fill='%23ff4081' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(144 50 50)'/%3E%3Cpath fill='%23f06292' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(216 50 50)'/%3E%3Cpath fill='%23ec407a' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(288 50 50)'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23ffeb3b'/%3E%3C/g%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg opacity='0.12'%3E%3Cpath fill='%239c27b0' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z'/%3E%3Cpath fill='%23ce93d8' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(72 50 50)'/%3E%3Cpath fill='%23ba68c8' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(144 50 50)'/%3E%3Cpath fill='%23ab47bc' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(216 50 50)'/%3E%3Cpath fill='%23e1bee7' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(288 50 50)'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23fff176'/%3E%3C/g%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg opacity='0.1'%3E%3Cpath fill='%23ff5722' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z'/%3E%3Cpath fill='%23ffab91' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(72 50 50)'/%3E%3Cpath fill='%23ff8a65' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(144 50 50)'/%3E%3Cpath fill='%23ff7043' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(216 50 50)'/%3E%3Cpath fill='%23ffccbc' d='M50 20c-5 0-10 8-10 15s5 10 10 10 10-3 10-10-5-15-10-15z' transform='rotate(288 50 50)'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23ffd54f'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 120px 120px, 180px 180px, 150px 150px;
+    background-position: 0 0, 60px 90px, 30px 45px;
+    animation: floatFlowers 60s linear infinite;
+}
+
+@keyframes floatFlowers {
+    0% { background-position: 0 0, 60px 90px, 30px 45px; }
+    100% { background-position: 120px 120px, 180px 210px, 150px 195px; }
 }
 
 #app {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 header {
@@ -25,15 +53,15 @@ header {
 
 header h1 {
     font-size: 3rem;
-    background: linear-gradient(90deg, #ffd700, #ffb800, #ffd700);
+    background: linear-gradient(90deg, #e91e63, #ff4081, #f50057);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
-    text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+    text-shadow: 0 0 30px rgba(233, 30, 99, 0.3);
 }
 
 .subtitle {
-    color: #b8860b;
+    color: #ad1457;
     font-size: 1.2rem;
 }
 
@@ -43,9 +71,9 @@ header h1 {
 }
 
 #connect-btn {
-    background: linear-gradient(90deg, #ffd700, #daa520);
-    border: 2px solid #ffd700;
-    color: #000;
+    background: linear-gradient(90deg, #e91e63, #d81b60);
+    border: 2px solid #e91e63;
+    color: #fff;
     font-weight: bold;
     padding: 1rem 2rem;
     font-size: 1.1rem;
@@ -56,39 +84,40 @@ header h1 {
 
 #connect-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 10px 40px rgba(233, 30, 99, 0.5);
 }
 
 #wallet-address {
     margin-top: 1rem;
-    color: #ffd700;
+    color: #ad1457;
     font-family: monospace;
-    background: rgba(255, 215, 0, 0.1);
+    background: rgba(233, 30, 99, 0.15);
     padding: 0.5rem 1rem;
     border-radius: 8px;
     display: inline-block;
 }
 
 .mint-card {
-    background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(30, 30, 30, 0.95) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(252, 228, 236, 0.95) 100%);
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
     max-width: 500px;
     margin: 0 auto 2rem;
-    border: 2px solid #ffd700;
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid #f48fb1;
+    box-shadow: 0 0 30px rgba(233, 30, 99, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
 }
 
 .mint-card h2 {
     margin-bottom: 1rem;
-    color: #ffd700;
+    color: #c2185b;
     font-size: 1.8rem;
 }
 
 .price {
     font-size: 1.5rem;
-    color: #ffd700;
+    color: #e91e63;
     margin-bottom: 1.5rem;
     font-weight: bold;
 }
@@ -108,15 +137,15 @@ header h1 {
     border: 1px solid transparent;
 }
 
-.rarity.common { background: rgba(156, 163, 175, 0.2); color: #9ca3af; border-color: #9ca3af; }
-.rarity.rare { background: rgba(59, 130, 246, 0.2); color: #3b82f6; border-color: #3b82f6; }
-.rarity.epic { background: rgba(168, 85, 247, 0.2); color: #a855f7; border-color: #a855f7; }
-.rarity.legendary { background: rgba(255, 215, 0, 0.2); color: #ffd700; border-color: #ffd700; }
+.rarity.common { background: rgba(156, 163, 175, 0.3); color: #6b7280; border-color: #9ca3af; }
+.rarity.rare { background: rgba(59, 130, 246, 0.2); color: #2563eb; border-color: #3b82f6; }
+.rarity.epic { background: rgba(168, 85, 247, 0.2); color: #7c3aed; border-color: #a855f7; }
+.rarity.legendary { background: rgba(233, 30, 99, 0.2); color: #c2185b; border-color: #e91e63; }
 
 #mint-btn {
-    background: linear-gradient(90deg, #ffd700, #b8860b);
-    border: 2px solid #ffd700;
-    color: #000;
+    background: linear-gradient(90deg, #e91e63, #c2185b);
+    border: 2px solid #e91e63;
+    color: #fff;
     font-weight: bold;
     padding: 1rem 2rem;
     font-size: 1.1rem;
@@ -128,7 +157,7 @@ header h1 {
 
 #mint-btn:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 10px 40px rgba(233, 30, 99, 0.5);
 }
 
 #mint-btn:disabled {
@@ -145,15 +174,16 @@ header h1 {
 
 .stat {
     text-align: center;
-    background: rgba(255, 215, 0, 0.05);
+    background: rgba(255, 255, 255, 0.8);
     padding: 1rem 2rem;
     border-radius: 12px;
-    border: 1px solid rgba(255, 215, 0, 0.2);
+    border: 1px solid rgba(233, 30, 99, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .stat-label {
     display: block;
-    color: #b8860b;
+    color: #ad1457;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
@@ -162,7 +192,7 @@ header h1 {
     display: block;
     font-size: 2rem;
     font-weight: bold;
-    color: #ffd700;
+    color: #c2185b;
 }
 
 .modal {
@@ -171,7 +201,7 @@ header h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(136, 14, 79, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,32 +209,32 @@ header h1 {
 }
 
 .modal-content {
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);
     border-radius: 20px;
     padding: 2.5rem;
     text-align: center;
     max-width: 400px;
-    border: 2px solid #ffd700;
-    box-shadow: 0 0 50px rgba(255, 215, 0, 0.4);
+    border: 2px solid #e91e63;
+    box-shadow: 0 0 50px rgba(233, 30, 99, 0.5);
 }
 
 .modal-content h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #ffd700;
+    color: #c2185b;
 }
 
 .modal-content p {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
-    color: #fff;
+    color: #880e4f;
 }
 
 #close-modal {
     margin-top: 1.5rem;
-    background: linear-gradient(90deg, #ffd700, #daa520);
-    border: 2px solid #ffd700;
-    color: #000;
+    background: linear-gradient(90deg, #e91e63, #d81b60);
+    border: 2px solid #e91e63;
+    color: #fff;
     font-weight: bold;
     padding: 0.75rem 2rem;
     border-radius: 8px;
@@ -214,5 +244,5 @@ header h1 {
 
 #close-modal:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 5px 20px rgba(233, 30, 99, 0.4);
 }
