@@ -294,3 +294,4 @@ header h1 {
 .flower-scale-36 { transform: scale(1.036); }
 .petal-animation-37 { animation: petalFloat 37s ease infinite; }
 .hibiscus-blur-38 { backdrop-filter: blur(38px); }
+.tropical-text-39 { color: hsl(340, 82%, 69%); }
