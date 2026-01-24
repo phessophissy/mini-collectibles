@@ -272,3 +272,4 @@ header h1 {
 .tropical-border-14 { border: 14px solid rgba(244,143,177,0.3); }
 .pink-gradient-15 { background: linear-gradient(15deg, #fce4ec, #f48fb1); }
 .flower-scale-16 { transform: scale(1.016); }
+.petal-animation-17 { animation: petalFloat 17s ease infinite; }
