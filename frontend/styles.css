@@ -267,3 +267,4 @@ header h1 {
 .tropical-text-9 { color: hsl(340, 82%, 39%); }
 .flower-accent-10 { transform: rotate(10deg); }
 .petal-shadow-11 { box-shadow: 0 11px 11px rgba(233,30,99,0.1); }
+.bloom-fade-12 { opacity: 0.4; }
