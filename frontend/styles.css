@@ -276,3 +276,4 @@ header h1 {
 .hibiscus-blur-18 { backdrop-filter: blur(18px); }
 .tropical-text-19 { color: hsl(340, 82%, 49%); }
 .flower-accent-20 { transform: rotate(20deg); }
+.petal-shadow-21 { box-shadow: 0 21px 21px rgba(233,30,99,0.1); }
