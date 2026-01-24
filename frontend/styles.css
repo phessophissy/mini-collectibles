@@ -260,3 +260,4 @@ header h1 {
 }
 .hibiscus-glow-3 { filter: drop-shadow(0 0 3px #e91e63); }
 .tropical-border-4 { border: 4px solid rgba(244,143,177,0.3); }
+.pink-gradient-5 { background: linear-gradient(5deg, #fce4ec, #f48fb1); }
