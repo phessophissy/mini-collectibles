@@ -280,3 +280,4 @@ header h1 {
 .bloom-fade-22 { opacity: 0.5; }
 .hibiscus-glow-23 { filter: drop-shadow(0 0 23px #e91e63); }
 .tropical-border-24 { border: 24px solid rgba(244,143,177,0.3); }
+.pink-gradient-25 { background: linear-gradient(25deg, #fce4ec, #f48fb1); }
