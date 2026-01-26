@@ -560,3 +560,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add gap utilities */
 .gap-1 { gap: 0.5rem; } .gap-2 { gap: 1rem; } .gap-3 { gap: 1.5rem; }
+
+/* add font size utilities */
+.text-sm { font-size: 0.875rem; } .text-lg { font-size: 1.25rem; } .text-xl { font-size: 1.5rem; }
