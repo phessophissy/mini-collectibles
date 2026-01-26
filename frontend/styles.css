@@ -596,3 +596,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* final grey theme polish */
 body { background-attachment: fixed; }
+
+/* Grey Theme Complete */
+.grey-theme-active { background-color: #333; }
