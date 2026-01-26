@@ -500,3 +500,6 @@ body { min-height: 100vh; min-height: 100dvh; }
 
 /* update header margin */
 header { margin-bottom: 3rem; }
+
+/* add responsive padding */
+@media (max-width: 768px) { #app { padding: 1rem; } }
