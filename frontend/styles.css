@@ -494,3 +494,6 @@ header h1 { text-shadow: 0 0 30px rgba(158, 158, 158, 0.3); }
 
 /* update body min height */
 body { min-height: 100vh; min-height: 100dvh; }
+
+/* add container max width */
+#app { max-width: 1200px; }
