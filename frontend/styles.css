@@ -416,3 +416,6 @@ header h1 {
 
 /* update modal text color */
 .modal-content p { color: #bdbdbd; }
+
+/* update close button gradient */
+#close-modal { background: linear-gradient(90deg, #616161, #424242); border-color: #757575; }
