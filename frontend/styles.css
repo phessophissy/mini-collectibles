@@ -392,3 +392,6 @@ header h1 {
 
 /* update price text color */
 .price { color: #bdbdbd; }
+
+/* update mint button gradient */
+#mint-btn { background: linear-gradient(90deg, #616161, #424242); border-color: #757575; }
