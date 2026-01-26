@@ -476,3 +476,6 @@ header h1 { text-shadow: 0 0 30px rgba(158, 158, 158, 0.3); }
 
 /* add floating emoji sizes */
 .floating-emoji.small { font-size: 1rem; } .floating-emoji.medium { font-size: 2rem; } .floating-emoji.large { font-size: 3rem; }
+
+/* add emoji opacity variations */
+.floating-emoji.faint { opacity: 0.15; } .floating-emoji.normal { opacity: 0.3; } .floating-emoji.bright { opacity: 0.5; }
