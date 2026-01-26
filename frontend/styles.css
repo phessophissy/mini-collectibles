@@ -521,3 +521,6 @@ button { user-select: none; -webkit-user-select: none; }
 
 /* remove tap highlight */
 button, a { -webkit-tap-highlight-color: transparent; }
+
+/* add reduced motion support */
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; } }
