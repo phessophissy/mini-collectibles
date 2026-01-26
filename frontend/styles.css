@@ -455,3 +455,6 @@ body::after { content: ''; position: fixed; top: 0; left: 0; width: 100%; height
 
 /* add focus ring style */
 button:focus { outline: 2px solid #9e9e9e; outline-offset: 2px; }
+
+/* update link colors */
+a { color: #9e9e9e; } a:hover { color: #bdbdbd; }
