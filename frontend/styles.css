@@ -443,3 +443,6 @@ header h1 {
 
 /* feat: add pulse animation for emojis */
 @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+
+/* add grey gradient overlay */
+body::after { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.3) 100%); pointer-events: none; z-index: -1; }
