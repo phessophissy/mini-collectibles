@@ -539,3 +539,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* update z-index layering */
 .floating-emoticons { z-index: 0; } #app { z-index: 1; } .modal { z-index: 1000; }
+
+/* add grey text utilities */
+.text-grey-light { color: #bdbdbd; } .text-grey-dark { color: #757575; }
