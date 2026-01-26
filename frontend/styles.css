@@ -515,3 +515,6 @@ header { margin-bottom: 3rem; }
 
 /* add smooth scroll */
 html { scroll-behavior: smooth; }
+
+/* prevent text selection on buttons */
+button { user-select: none; -webkit-user-select: none; }
