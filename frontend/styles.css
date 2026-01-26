@@ -440,3 +440,6 @@ header h1 {
 
 /* update legendary rarity */
 .rarity.legendary { background: rgba(255, 215, 0, 0.2); color: #ffd700; border-color: #ffb300; }
+
+/* feat: add pulse animation for emojis */
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
