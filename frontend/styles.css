@@ -491,3 +491,6 @@ header h1 { text-shadow: 0 0 30px rgba(158, 158, 158, 0.3); }
 
 /* add blur background effect */
 .blur-bg { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+
+/* update body min height */
+body { min-height: 100vh; min-height: 100dvh; }
