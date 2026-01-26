@@ -578,3 +578,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add overflow utilities */
 .overflow-hidden { overflow: hidden; } .overflow-auto { overflow: auto; }
+
+/* add position utilities */
+.relative { position: relative; } .absolute { position: absolute; } .fixed { position: fixed; }
