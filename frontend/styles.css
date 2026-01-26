@@ -434,3 +434,6 @@ header h1 {
 
 /* update rare rarity colors */
 .rarity.rare { background: rgba(100, 181, 246, 0.2); color: #64b5f6; border-color: #42a5f5; }
+
+/* update epic rarity colors */
+.rarity.epic { background: rgba(186, 104, 200, 0.2); color: #ba68c8; border-color: #ab47bc; }
