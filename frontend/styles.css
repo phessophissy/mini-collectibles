@@ -518,3 +518,6 @@ html { scroll-behavior: smooth; }
 
 /* prevent text selection on buttons */
 button { user-select: none; -webkit-user-select: none; }
+
+/* remove tap highlight */
+button, a { -webkit-tap-highlight-color: transparent; }
