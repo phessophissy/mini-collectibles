@@ -366,3 +366,11 @@ header h1 {
         transform: translateX(30px);
     }
 }
+
+/* Grey Theme Header Gradient */
+header h1 {
+    background: linear-gradient(90deg, #9e9e9e, #bdbdbd, #757575);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
