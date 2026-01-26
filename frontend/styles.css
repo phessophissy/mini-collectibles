@@ -536,3 +536,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add emoji spin class */
 .floating-emoji.spin { animation: spin 4s linear infinite; }
+
+/* update z-index layering */
+.floating-emoticons { z-index: 0; } #app { z-index: 1; } .modal { z-index: 1000; }
