@@ -590,3 +590,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add emoji filter variations */
 .floating-emoji.warm { filter: hue-rotate(30deg) drop-shadow(0 0 5px rgba(255,200,100,0.3)); }
+
+/* add emoji cool filter */
+.floating-emoji.cool { filter: hue-rotate(-30deg) drop-shadow(0 0 5px rgba(100,200,255,0.3)); }
