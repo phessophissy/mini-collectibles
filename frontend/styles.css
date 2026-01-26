@@ -587,3 +587,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add height utilities */
 .h-full { height: 100%; } .h-screen { height: 100vh; }
+
+/* add emoji filter variations */
+.floating-emoji.warm { filter: hue-rotate(30deg) drop-shadow(0 0 5px rgba(255,200,100,0.3)); }
