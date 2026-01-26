@@ -527,3 +527,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* feat: add spin animation */
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* feat: add bounce animation */
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
