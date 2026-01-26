@@ -554,3 +554,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add padding utilities */
 .p-1 { padding: 0.5rem; } .p-2 { padding: 1rem; } .p-3 { padding: 1.5rem; }
+
+/* add flex utilities */
+.flex { display: flex; } .flex-center { display: flex; align-items: center; justify-content: center; }
