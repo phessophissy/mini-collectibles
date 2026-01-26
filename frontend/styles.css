@@ -593,3 +593,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add emoji cool filter */
 .floating-emoji.cool { filter: hue-rotate(-30deg) drop-shadow(0 0 5px rgba(100,200,255,0.3)); }
+
+/* final grey theme polish */
+body { background-attachment: fixed; }
