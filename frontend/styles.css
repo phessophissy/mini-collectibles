@@ -551,3 +551,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add spacing utilities */
 .mt-1 { margin-top: 0.5rem; } .mt-2 { margin-top: 1rem; } .mt-3 { margin-top: 1.5rem; }
+
+/* add padding utilities */
+.p-1 { padding: 0.5rem; } .p-2 { padding: 1rem; } .p-3 { padding: 1.5rem; }
