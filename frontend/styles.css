@@ -485,3 +485,6 @@ header h1 { text-shadow: 0 0 30px rgba(158, 158, 158, 0.3); }
 
 /* add grey border utilities */
 .grey-border-light { border: 1px solid #757575; } .grey-border-dark { border: 1px solid #424242; }
+
+/* add grey shadow utilities */
+.grey-shadow-sm { box-shadow: 0 2px 4px rgba(0,0,0,0.3); } .grey-shadow-lg { box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
