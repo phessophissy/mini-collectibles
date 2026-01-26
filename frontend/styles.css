@@ -413,3 +413,6 @@ header h1 {
 
 /* update modal heading color */
 .modal-content h2 { color: #e0e0e0; }
+
+/* update modal text color */
+.modal-content p { color: #bdbdbd; }
