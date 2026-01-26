@@ -557,3 +557,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add flex utilities */
 .flex { display: flex; } .flex-center { display: flex; align-items: center; justify-content: center; }
+
+/* add gap utilities */
+.gap-1 { gap: 0.5rem; } .gap-2 { gap: 1rem; } .gap-3 { gap: 1.5rem; }
