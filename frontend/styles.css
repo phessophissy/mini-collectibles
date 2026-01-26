@@ -425,3 +425,6 @@ header h1 {
 
 /* update button hover shadow */
 #connect-btn:hover, #mint-btn:hover:not(:disabled) { box-shadow: 0 10px 40px rgba(100, 100, 100, 0.4); }
+
+/* add emoji glow effect */
+.floating-emoji { filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3)); }
