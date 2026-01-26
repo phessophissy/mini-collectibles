@@ -599,3 +599,6 @@ body { background-attachment: fixed; }
 
 /* Grey Theme Complete */
 .grey-theme-active { background-color: #333; }
+
+/* Grey Emoticons Theme Finalized */
+.emoticons-enabled { pointer-events: none; }
