@@ -374,3 +374,6 @@ header h1 {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
 }
+
+/* update subtitle color to silver */
+.subtitle { color: #9e9e9e; }
