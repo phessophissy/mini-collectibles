@@ -584,3 +584,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add width utilities */
 .w-full { width: 100%; } .w-auto { width: auto; }
+
+/* add height utilities */
+.h-full { height: 100%; } .h-screen { height: 100vh; }
