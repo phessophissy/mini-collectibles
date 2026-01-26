@@ -389,3 +389,6 @@ header h1 {
 
 /* update mint card heading color */
 .mint-card h2 { color: #e0e0e0; }
+
+/* update price text color */
+.price { color: #bdbdbd; }
