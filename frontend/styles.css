@@ -545,3 +545,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add grey bg utilities */
 .bg-grey-light { background: #616161; } .bg-grey-dark { background: #424242; }
+
+/* add border radius utilities */
+.rounded-sm { border-radius: 8px; } .rounded-lg { border-radius: 20px; }
