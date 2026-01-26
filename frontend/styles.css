@@ -569,3 +569,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add opacity utilities */
 .opacity-50 { opacity: 0.5; } .opacity-75 { opacity: 0.75; }
+
+/* add transition utilities */
+.transition-fast { transition: all 0.15s ease; } .transition-slow { transition: all 0.5s ease; }
