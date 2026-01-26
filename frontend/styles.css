@@ -572,3 +572,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add transition utilities */
 .transition-fast { transition: all 0.15s ease; } .transition-slow { transition: all 0.5s ease; }
+
+/* add cursor utilities */
+.cursor-pointer { cursor: pointer; } .cursor-not-allowed { cursor: not-allowed; }
