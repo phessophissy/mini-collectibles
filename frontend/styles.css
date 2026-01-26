@@ -404,3 +404,6 @@ header h1 {
 
 /* update stat value color */
 .stat-value { color: #e0e0e0; }
+
+/* update modal background */
+.modal { background: rgba(33, 33, 33, 0.95); }
