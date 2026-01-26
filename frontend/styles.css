@@ -422,3 +422,6 @@ header h1 {
 
 /* add grey box shadow to cards */
 .mint-card { box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.05); }
+
+/* update button hover shadow */
+#connect-btn:hover, #mint-btn:hover:not(:disabled) { box-shadow: 0 10px 40px rgba(100, 100, 100, 0.4); }
