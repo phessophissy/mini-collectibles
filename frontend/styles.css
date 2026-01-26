@@ -533,3 +533,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add emoji bounce class */
 .floating-emoji.bounce { animation: bounce 2s ease-in-out infinite; }
+
+/* add emoji spin class */
+.floating-emoji.spin { animation: spin 4s linear infinite; }
