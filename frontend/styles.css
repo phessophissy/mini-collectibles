@@ -548,3 +548,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add border radius utilities */
 .rounded-sm { border-radius: 8px; } .rounded-lg { border-radius: 20px; }
+
+/* add spacing utilities */
+.mt-1 { margin-top: 0.5rem; } .mt-2 { margin-top: 1rem; } .mt-3 { margin-top: 1.5rem; }
