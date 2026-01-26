@@ -407,3 +407,6 @@ header h1 {
 
 /* update modal background */
 .modal { background: rgba(33, 33, 33, 0.95); }
+
+/* update modal content gradient */
+.modal-content { background: linear-gradient(135deg, #424242 0%, #303030 100%); border-color: #616161; }
