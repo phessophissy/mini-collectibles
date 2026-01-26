@@ -566,3 +566,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add font weight utilities */
 .font-medium { font-weight: 500; } .font-bold { font-weight: 700; }
+
+/* add opacity utilities */
+.opacity-50 { opacity: 0.5; } .opacity-75 { opacity: 0.75; }
