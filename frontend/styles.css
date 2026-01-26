@@ -473,3 +473,6 @@ header h1 { text-shadow: 0 0 30px rgba(158, 158, 158, 0.3); }
 
 /* feat: add wiggle animation */
 @keyframes wiggle { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+
+/* add floating emoji sizes */
+.floating-emoji.small { font-size: 1rem; } .floating-emoji.medium { font-size: 2rem; } .floating-emoji.large { font-size: 3rem; }
