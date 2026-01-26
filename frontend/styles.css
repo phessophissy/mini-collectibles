@@ -575,3 +575,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* add cursor utilities */
 .cursor-pointer { cursor: pointer; } .cursor-not-allowed { cursor: not-allowed; }
+
+/* add overflow utilities */
+.overflow-hidden { overflow: hidden; } .overflow-auto { overflow: auto; }
