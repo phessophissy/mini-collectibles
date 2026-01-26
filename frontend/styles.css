@@ -512,3 +512,6 @@ header { margin-bottom: 3rem; }
 
 /* responsive mint card */
 @media (max-width: 480px) { .mint-card { padding: 1.5rem; } }
+
+/* add smooth scroll */
+html { scroll-behavior: smooth; }
