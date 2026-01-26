@@ -383,3 +383,6 @@ header h1 {
 
 /* update wallet address background */
 #wallet-address { background: rgba(158, 158, 158, 0.2); color: #bdbdbd; }
+
+/* update mint card to dark grey */
+.mint-card { background: linear-gradient(135deg, rgba(66, 66, 66, 0.95) 0%, rgba(48, 48, 48, 0.98) 100%); border-color: #616161; }
