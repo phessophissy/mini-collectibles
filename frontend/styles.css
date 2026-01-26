@@ -482,3 +482,6 @@ header h1 { text-shadow: 0 0 30px rgba(158, 158, 158, 0.3); }
 
 /* feat: add drift animation */
 @keyframes drift { 0% { transform: translateX(0) rotate(0deg); } 50% { transform: translateX(20px) rotate(180deg); } 100% { transform: translateX(0) rotate(360deg); } }
+
+/* add grey border utilities */
+.grey-border-light { border: 1px solid #757575; } .grey-border-dark { border: 1px solid #424242; }
