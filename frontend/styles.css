@@ -329,3 +329,12 @@ header h1 {
     z-index: 0;
     overflow: hidden;
 }
+
+/* Floating Emoticon Styles */
+.floating-emoji {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.3;
+    animation: floatUp linear infinite;
+    pointer-events: none;
+}
