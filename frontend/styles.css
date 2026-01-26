@@ -377,3 +377,6 @@ header h1 {
 
 /* update subtitle color to silver */
 .subtitle { color: #9e9e9e; }
+
+/* update connect button to grey gradient */
+#connect-btn { background: linear-gradient(90deg, #616161, #757575); border-color: #757575; }
