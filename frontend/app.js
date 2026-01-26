@@ -159,3 +159,44 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("mint-btn")?.addEventListener("click", mintCollectible);
     document.getElementById("close-modal")?.addEventListener("click", closeModal);
 });
+
+// Floating Emoticons Animation
+const emojis = ['😀', '😎', '🎉', '🎨', '💎', '🌟', '✨', '🔥', '💫', '🎭', '🎪', '🎢', '🎡', '🎠', '🎯', '🎲', '🎮', '🕹️', '🎸', '🎺', '🎷', '🥁', '🎹', '🎵', '🎶', '💖', '💝', '💗', '💓', '💕', '🦋', '🌈', '🌸', '🌺', '🌻', '🌼', '🍀', '🍁', '🍂', '🍃'];
+
+function createFloatingEmoji() {
+    const container = document.getElementById('emoji-container');
+    if (!container) return;
+    
+    const emoji = document.createElement('span');
+    emoji.className = 'floating-emoji';
+    emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    
+    // Random position
+    emoji.style.left = Math.random() * 100 + '%';
+    
+    // Random size
+    const size = 1 + Math.random() * 2;
+    emoji.style.fontSize = size + 'rem';
+    
+    // Random animation duration
+    const duration = 8 + Math.random() * 12;
+    emoji.style.animationDuration = duration + 's';
+    
+    // Random delay
+    emoji.style.animationDelay = Math.random() * 5 + 's';
+    
+    container.appendChild(emoji);
+    
+    // Remove after animation
+    setTimeout(() => {
+        emoji.remove();
+    }, (duration + 5) * 1000);
+}
+
+// Start creating emojis
+setInterval(createFloatingEmoji, 500);
+
+// Create initial batch
+for (let i = 0; i < 15; i++) {
+    setTimeout(createFloatingEmoji, i * 200);
+}
