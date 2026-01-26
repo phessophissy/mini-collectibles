@@ -464,3 +464,6 @@ button { transition: all 0.3s ease; }
 
 /* add card hover effect */
 .mint-card:hover { transform: translateY(-5px); box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6); }
+
+/* add stat card hover */
+.stat:hover { transform: translateY(-3px); background: rgba(80, 80, 80, 0.9); }
