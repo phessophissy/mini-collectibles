@@ -395,3 +395,6 @@ header h1 {
 
 /* update mint button gradient */
 #mint-btn { background: linear-gradient(90deg, #616161, #424242); border-color: #757575; }
+
+/* update stat card background */
+.stat { background: rgba(66, 66, 66, 0.9); border-color: rgba(158, 158, 158, 0.3); }
