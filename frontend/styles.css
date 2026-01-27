@@ -679,3 +679,6 @@ body.light-mode .subtitle { color: #6b2020; }
 
 /* update mint button to ox red */
 #mint-btn { background: linear-gradient(90deg, var(--ox-red-medium), var(--ox-red-dark)); border-color: var(--ox-red-accent); }
+
+/* dark mode button hover */
+body.dark-mode button:hover { box-shadow: 0 10px 40px rgba(201, 64, 64, 0.4); }
