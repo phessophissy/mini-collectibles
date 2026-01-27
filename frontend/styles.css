@@ -823,3 +823,6 @@ body.light-mode footer { color: #6b2020; }
 
 /* add ox red glow animation */
 @keyframes oxGlow { 0%, 100% { box-shadow: 0 0 10px rgba(201, 64, 64, 0.3); } 50% { box-shadow: 0 0 25px rgba(201, 64, 64, 0.6); } }
+
+/* apply glow to active toggle */
+.theme-toggle button.active { animation: oxGlow 2s ease-in-out infinite; }
