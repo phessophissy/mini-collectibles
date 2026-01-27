@@ -748,3 +748,6 @@ button:focus { outline-color: var(--ox-red-accent); }
 
 /* update link colors ox red */
 a { color: var(--ox-red-accent); } a:hover { color: var(--ox-red-light); }
+
+/* add ox red text shadow */
+header h1 { text-shadow: 0 0 30px rgba(201, 64, 64, 0.5); }
