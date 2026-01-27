@@ -718,3 +718,6 @@ body.light-mode .price { color: #6b2020; }
 
 /* dark mode stat label */
 body.dark-mode .stat-label { color: #c9a0a0; }
+
+/* light mode stat label */
+body.light-mode .stat-label { color: #6b2020; }
