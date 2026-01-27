@@ -643,3 +643,6 @@ body { background: linear-gradient(135deg, #6b1c1c 0%, #8b2525 50%, #5a1818 100%
 
 /* add dark mode card background */
 body.dark-mode .mint-card { background: linear-gradient(135deg, rgba(45, 16, 16, 0.95) 0%, rgba(26, 8, 8, 0.98) 100%); }
+
+/* add light mode card background */
+body.light-mode .mint-card { background: linear-gradient(135deg, rgba(255, 245, 245, 0.95) 0%, rgba(255, 232, 232, 0.98) 100%); }
