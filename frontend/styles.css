@@ -766,3 +766,6 @@ button { transition: all 0.3s ease, background 0.5s ease; }
 
 /* add moon icon styles */
 .moon-icon::before { content: '🌙'; }
+
+/* theme icon button size */
+.theme-toggle button { min-width: 50px; font-size: 1.2rem; }
