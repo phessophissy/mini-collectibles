@@ -817,3 +817,6 @@ body.light-mode footer { color: #6b2020; }
 
 /* responsive toggle position */
 @media (max-width: 480px) { .theme-toggle { top: 10px; right: 10px; } .theme-toggle button { padding: 8px 12px; font-size: 1rem; } }
+
+/* add theme preference detection */
+@media (prefers-color-scheme: dark) { body:not(.light-mode):not(.dark-mode) { background: linear-gradient(135deg, #6b1c1c 0%, #3d1010 100%); } }
