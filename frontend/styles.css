@@ -688,3 +688,6 @@ body.light-mode button:hover { box-shadow: 0 10px 40px rgba(107, 28, 28, 0.3); }
 
 /* update card border to ox red */
 .mint-card { border-color: var(--ox-red-accent); }
+
+/* add ox red shadow to cards */
+.mint-card { box-shadow: 0 0 30px rgba(107, 28, 28, 0.4); }
