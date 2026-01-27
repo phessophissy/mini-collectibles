@@ -634,3 +634,6 @@ body { background-attachment: fixed; }
 
 /* add dark mode body styles */
 body.dark-mode { background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%); color: var(--text-dark); }
+
+/* add light mode body styles */
+body.light-mode { background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-light-secondary) 100%); color: var(--text-light); }
