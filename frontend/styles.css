@@ -667,3 +667,6 @@ body.light-mode .modal-content { background: linear-gradient(135deg, #fff5f5 0%,
 
 /* update header gradient to ox red */
 header h1 { background: linear-gradient(90deg, #c94040, #8b2525, #6b1c1c); -webkit-background-clip: text; }
+
+/* dark mode subtitle color */
+body.dark-mode .subtitle { color: #c9a0a0; }
