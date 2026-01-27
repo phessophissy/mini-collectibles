@@ -670,3 +670,6 @@ header h1 { background: linear-gradient(90deg, #c94040, #8b2525, #6b1c1c); -webk
 
 /* dark mode subtitle color */
 body.dark-mode .subtitle { color: #c9a0a0; }
+
+/* light mode subtitle color */
+body.light-mode .subtitle { color: #6b2020; }
