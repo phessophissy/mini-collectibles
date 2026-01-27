@@ -793,3 +793,6 @@ body.light-mode .floating-emoji { filter: drop-shadow(0 0 5px rgba(107, 28, 28, 
 
 /* dark mode header background */
 body.dark-mode header { background: rgba(26, 8, 8, 0.3); backdrop-filter: blur(5px); border-radius: 16px; padding: 20px; }
+
+/* light mode header background */
+body.light-mode header { background: rgba(255, 245, 245, 0.5); backdrop-filter: blur(5px); border-radius: 16px; padding: 20px; }
