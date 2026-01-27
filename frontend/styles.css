@@ -739,3 +739,6 @@ body.light-mode #wallet-address { background: rgba(107, 28, 28, 0.1); color: #6b
 
 /* update scrollbar to ox red */
 ::-webkit-scrollbar-thumb { background: var(--ox-red-medium); } ::-webkit-scrollbar-track { background: var(--ox-red-dark); }
+
+/* update selection color ox red */
+::selection { background: rgba(201, 64, 64, 0.4); color: #fff; }
