@@ -655,3 +655,6 @@ body.light-mode .stat { background: rgba(255, 245, 245, 0.9); border-color: rgba
 
 /* dark mode modal background */
 body.dark-mode .modal { background: rgba(26, 8, 8, 0.95); }
+
+/* light mode modal background */
+body.light-mode .modal { background: rgba(255, 245, 245, 0.95); }
