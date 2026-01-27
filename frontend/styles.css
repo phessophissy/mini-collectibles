@@ -682,3 +682,6 @@ body.light-mode .subtitle { color: #6b2020; }
 
 /* dark mode button hover */
 body.dark-mode button:hover { box-shadow: 0 10px 40px rgba(201, 64, 64, 0.4); }
+
+/* light mode button hover */
+body.light-mode button:hover { box-shadow: 0 10px 40px rgba(107, 28, 28, 0.3); }
