@@ -646,3 +646,6 @@ body.dark-mode .mint-card { background: linear-gradient(135deg, rgba(45, 16, 16,
 
 /* add light mode card background */
 body.light-mode .mint-card { background: linear-gradient(135deg, rgba(255, 245, 245, 0.95) 0%, rgba(255, 232, 232, 0.98) 100%); }
+
+/* dark mode stat card */
+body.dark-mode .stat { background: rgba(45, 16, 16, 0.9); border-color: rgba(201, 64, 64, 0.3); }
