@@ -751,3 +751,6 @@ a { color: var(--ox-red-accent); } a:hover { color: var(--ox-red-light); }
 
 /* add ox red text shadow */
 header h1 { text-shadow: 0 0 30px rgba(201, 64, 64, 0.5); }
+
+/* add theme transition */
+body { transition: background 0.5s ease, color 0.3s ease; }
