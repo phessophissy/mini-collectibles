@@ -697,3 +697,6 @@ body.dark-mode .mint-card h2 { color: #f5e6e6; }
 
 /* light mode text colors */
 body.light-mode .mint-card h2 { color: #4a1515; }
+
+/* dark mode price color */
+body.dark-mode .price { color: #c9a0a0; }
