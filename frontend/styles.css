@@ -664,3 +664,6 @@ body.dark-mode .modal-content { background: linear-gradient(135deg, #2d1010 0%, 
 
 /* light mode modal content */
 body.light-mode .modal-content { background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%); border-color: var(--ox-red-medium); }
+
+/* update header gradient to ox red */
+header h1 { background: linear-gradient(90deg, #c94040, #8b2525, #6b1c1c); -webkit-background-clip: text; }
