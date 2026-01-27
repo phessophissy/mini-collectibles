@@ -602,3 +602,230 @@ body { background-attachment: fixed; }
 
 /* Grey Emoticons Theme Finalized */
 .emoticons-enabled { pointer-events: none; }
+
+/* Ox Red Theme with Dark/Light Mode Support */
+:root {
+    --ox-red-dark: #6b1c1c;
+    --ox-red-medium: #8b2525;
+    --ox-red-light: #a83232;
+    --ox-red-accent: #c94040;
+}
+
+/* add dark mode CSS variables */
+:root { --bg-dark: #1a0808; --bg-dark-secondary: #2d1010; --text-dark: #f5e6e6; --text-dark-muted: #c9a0a0; }
+
+/* add light mode CSS variables */
+:root { --bg-light: #fff5f5; --bg-light-secondary: #ffe8e8; --text-light: #4a1515; --text-light-muted: #6b2020; }
+
+/* add theme toggle container styles */
+.theme-toggle { position: fixed; top: 20px; right: 20px; z-index: 1000; display: flex; gap: 8px; }
+
+/* add toggle button base styles */
+.theme-toggle button { padding: 10px 16px; border-radius: 8px; border: 2px solid var(--ox-red-medium); cursor: pointer; font-weight: 600; transition: all 0.3s ease; }
+
+/* add toggle button hover effect */
+.theme-toggle button:hover { transform: scale(1.05); box-shadow: 0 4px 12px rgba(107, 28, 28, 0.4); }
+
+/* add active toggle button state */
+.theme-toggle button.active { background: var(--ox-red-medium); color: white; }
+
+/* add inactive toggle button state */
+.theme-toggle button:not(.active) { background: transparent; color: var(--ox-red-medium); }
+
+/* add dark mode body styles */
+body.dark-mode { background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%); color: var(--text-dark); }
+
+/* add light mode body styles */
+body.light-mode { background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-light-secondary) 100%); color: var(--text-light); }
+
+/* update body to ox red gradient */
+body { background: linear-gradient(135deg, #6b1c1c 0%, #8b2525 50%, #5a1818 100%); }
+
+/* add dark mode card background */
+body.dark-mode .mint-card { background: linear-gradient(135deg, rgba(45, 16, 16, 0.95) 0%, rgba(26, 8, 8, 0.98) 100%); }
+
+/* add light mode card background */
+body.light-mode .mint-card { background: linear-gradient(135deg, rgba(255, 245, 245, 0.95) 0%, rgba(255, 232, 232, 0.98) 100%); }
+
+/* dark mode stat card */
+body.dark-mode .stat { background: rgba(45, 16, 16, 0.9); border-color: rgba(201, 64, 64, 0.3); }
+
+/* light mode stat card */
+body.light-mode .stat { background: rgba(255, 245, 245, 0.9); border-color: rgba(107, 28, 28, 0.3); }
+
+/* dark mode modal background */
+body.dark-mode .modal { background: rgba(26, 8, 8, 0.95); }
+
+/* light mode modal background */
+body.light-mode .modal { background: rgba(255, 245, 245, 0.95); }
+
+/* dark mode modal content */
+body.dark-mode .modal-content { background: linear-gradient(135deg, #2d1010 0%, #1a0808 100%); border-color: var(--ox-red-accent); }
+
+/* light mode modal content */
+body.light-mode .modal-content { background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%); border-color: var(--ox-red-medium); }
+
+/* update header gradient to ox red */
+header h1 { background: linear-gradient(90deg, #c94040, #8b2525, #6b1c1c); -webkit-background-clip: text; }
+
+/* dark mode subtitle color */
+body.dark-mode .subtitle { color: #c9a0a0; }
+
+/* light mode subtitle color */
+body.light-mode .subtitle { color: #6b2020; }
+
+/* update connect button to ox red */
+#connect-btn { background: linear-gradient(90deg, var(--ox-red-medium), var(--ox-red-dark)); border-color: var(--ox-red-accent); }
+
+/* update mint button to ox red */
+#mint-btn { background: linear-gradient(90deg, var(--ox-red-medium), var(--ox-red-dark)); border-color: var(--ox-red-accent); }
+
+/* dark mode button hover */
+body.dark-mode button:hover { box-shadow: 0 10px 40px rgba(201, 64, 64, 0.4); }
+
+/* light mode button hover */
+body.light-mode button:hover { box-shadow: 0 10px 40px rgba(107, 28, 28, 0.3); }
+
+/* update card border to ox red */
+.mint-card { border-color: var(--ox-red-accent); }
+
+/* add ox red shadow to cards */
+.mint-card { box-shadow: 0 0 30px rgba(107, 28, 28, 0.4); }
+
+/* dark mode text colors */
+body.dark-mode .mint-card h2 { color: #f5e6e6; }
+
+/* light mode text colors */
+body.light-mode .mint-card h2 { color: #4a1515; }
+
+/* dark mode price color */
+body.dark-mode .price { color: #c9a0a0; }
+
+/* light mode price color */
+body.light-mode .price { color: #6b2020; }
+
+/* update rarity common ox red */
+.rarity.common { background: rgba(107, 28, 28, 0.2); color: #c9a0a0; border-color: #8b2525; }
+
+/* update rarity rare ox red */
+.rarity.rare { background: rgba(100, 149, 237, 0.2); color: #6495ed; border-color: #4169e1; }
+
+/* update rarity epic ox red */
+.rarity.epic { background: rgba(186, 85, 211, 0.2); color: #ba55d3; border-color: #9932cc; }
+
+/* update legendary gold */
+.rarity.legendary { background: rgba(255, 215, 0, 0.2); color: #ffd700; border-color: #daa520; }
+
+/* dark mode stat label */
+body.dark-mode .stat-label { color: #c9a0a0; }
+
+/* light mode stat label */
+body.light-mode .stat-label { color: #6b2020; }
+
+/* dark mode stat value */
+body.dark-mode .stat-value { color: #f5e6e6; }
+
+/* light mode stat value */
+body.light-mode .stat-value { color: #4a1515; }
+
+/* update close modal button */
+#close-modal { background: linear-gradient(90deg, var(--ox-red-medium), var(--ox-red-dark)); border-color: var(--ox-red-accent); }
+
+/* dark mode wallet address */
+body.dark-mode #wallet-address { background: rgba(201, 64, 64, 0.15); color: #c9a0a0; }
+
+/* light mode wallet address */
+body.light-mode #wallet-address { background: rgba(107, 28, 28, 0.1); color: #6b2020; }
+
+/* update scrollbar to ox red */
+::-webkit-scrollbar-thumb { background: var(--ox-red-medium); } ::-webkit-scrollbar-track { background: var(--ox-red-dark); }
+
+/* update selection color ox red */
+::selection { background: rgba(201, 64, 64, 0.4); color: #fff; }
+
+/* update focus ring ox red */
+button:focus { outline-color: var(--ox-red-accent); }
+
+/* update link colors ox red */
+a { color: var(--ox-red-accent); } a:hover { color: var(--ox-red-light); }
+
+/* add ox red text shadow */
+header h1 { text-shadow: 0 0 30px rgba(201, 64, 64, 0.5); }
+
+/* add theme transition */
+body { transition: background 0.5s ease, color 0.3s ease; }
+
+/* add card transition */
+.mint-card, .stat, .modal-content { transition: background 0.5s ease, border-color 0.3s ease; }
+
+/* add button transition */
+button { transition: all 0.3s ease, background 0.5s ease; }
+
+/* add sun icon styles */
+.sun-icon::before { content: '☀️'; }
+
+/* add moon icon styles */
+.moon-icon::before { content: '🌙'; }
+
+/* theme icon button size */
+.theme-toggle button { min-width: 50px; font-size: 1.2rem; }
+
+/* add toggle separator */
+.theme-toggle::after { content: ''; position: absolute; width: 1px; height: 20px; background: var(--ox-red-medium); left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0; }
+
+/* dark mode emoji glow */
+body.dark-mode .floating-emoji { filter: drop-shadow(0 0 8px rgba(201, 64, 64, 0.4)); }
+
+/* light mode emoji filter */
+body.light-mode .floating-emoji { filter: drop-shadow(0 0 5px rgba(107, 28, 28, 0.3)); opacity: 0.4; }
+
+/* add ox red border utilities */
+.ox-border { border: 2px solid var(--ox-red-medium); } .ox-border-light { border: 1px solid var(--ox-red-light); }
+
+/* add ox red bg utilities */
+.ox-bg { background: var(--ox-red-medium); } .ox-bg-dark { background: var(--ox-red-dark); }
+
+/* add ox red text utilities */
+.ox-text { color: var(--ox-red-accent); } .ox-text-dark { color: var(--ox-red-dark); }
+
+/* add ox red shadow utilities */
+.ox-shadow { box-shadow: 0 4px 12px rgba(107, 28, 28, 0.3); } .ox-shadow-lg { box-shadow: 0 8px 24px rgba(107, 28, 28, 0.4); }
+
+/* dark mode header background */
+body.dark-mode header { background: rgba(26, 8, 8, 0.3); backdrop-filter: blur(5px); border-radius: 16px; padding: 20px; }
+
+/* light mode header background */
+body.light-mode header { background: rgba(255, 245, 245, 0.5); backdrop-filter: blur(5px); border-radius: 16px; padding: 20px; }
+
+/* add mode indicator dot */
+.theme-toggle button.active::after { content: ''; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); width: 6px; height: 6px; background: var(--ox-red-accent); border-radius: 50%; }
+
+/* add toggle animation */
+.theme-toggle button { position: relative; overflow: hidden; } .theme-toggle button::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%); opacity: 0; transition: opacity 0.3s; }
+
+/* toggle button ripple */
+.theme-toggle button:active::before { opacity: 1; }
+
+/* dark mode footer */
+body.dark-mode footer { color: #c9a0a0; }
+
+/* light mode footer */
+body.light-mode footer { color: #6b2020; }
+
+/* add ox red gradient text */
+.ox-gradient-text { background: linear-gradient(90deg, var(--ox-red-light), var(--ox-red-accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* responsive toggle position */
+@media (max-width: 480px) { .theme-toggle { top: 10px; right: 10px; } .theme-toggle button { padding: 8px 12px; font-size: 1rem; } }
+
+/* add theme preference detection */
+@media (prefers-color-scheme: dark) { body:not(.light-mode):not(.dark-mode) { background: linear-gradient(135deg, #6b1c1c 0%, #3d1010 100%); } }
+
+/* add ox red glow animation */
+@keyframes oxGlow { 0%, 100% { box-shadow: 0 0 10px rgba(201, 64, 64, 0.3); } 50% { box-shadow: 0 0 25px rgba(201, 64, 64, 0.6); } }
+
+/* apply glow to active toggle */
+.theme-toggle button.active { animation: oxGlow 2s ease-in-out infinite; }
+
+/* finalize ox red dark light theme */
+body { --current-theme: 'default'; }

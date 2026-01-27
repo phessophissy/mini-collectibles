@@ -200,3 +200,28 @@ setInterval(createFloatingEmoji, 500);
 for (let i = 0; i < 15; i++) {
     setTimeout(createFloatingEmoji, i * 200);
 }
+
+// Theme Toggle Functionality
+function initThemeToggle() {
+    const lightBtn = document.getElementById('light-btn');
+    const darkBtn = document.getElementById('dark-btn');
+    const body = document.body;
+    
+    // Load saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    applyTheme(savedTheme);
+    
+    lightBtn.addEventListener('click', () => applyTheme('light'));
+    darkBtn.addEventListener('click', () => applyTheme('dark'));
+    
+    function applyTheme(theme) {
+        body.classList.remove('light-mode', 'dark-mode');
+        body.classList.add(theme + '-mode');
+        lightBtn.classList.toggle('active', theme === 'light');
+        darkBtn.classList.toggle('active', theme === 'dark');
+        localStorage.setItem('theme', theme);
+    }
+}
+
+// Initialize theme toggle on DOM load
+document.addEventListener('DOMContentLoaded', initThemeToggle);
