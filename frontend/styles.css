@@ -628,3 +628,6 @@ body { background-attachment: fixed; }
 
 /* add active toggle button state */
 .theme-toggle button.active { background: var(--ox-red-medium); color: white; }
+
+/* add inactive toggle button state */
+.theme-toggle button:not(.active) { background: transparent; color: var(--ox-red-medium); }
