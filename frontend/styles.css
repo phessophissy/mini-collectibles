@@ -790,3 +790,6 @@ body.light-mode .floating-emoji { filter: drop-shadow(0 0 5px rgba(107, 28, 28, 
 
 /* add ox red shadow utilities */
 .ox-shadow { box-shadow: 0 4px 12px rgba(107, 28, 28, 0.3); } .ox-shadow-lg { box-shadow: 0 8px 24px rgba(107, 28, 28, 0.4); }
+
+/* dark mode header background */
+body.dark-mode header { background: rgba(26, 8, 8, 0.3); backdrop-filter: blur(5px); border-radius: 16px; padding: 20px; }
