@@ -814,3 +814,6 @@ body.light-mode footer { color: #6b2020; }
 
 /* add ox red gradient text */
 .ox-gradient-text { background: linear-gradient(90deg, var(--ox-red-light), var(--ox-red-accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* responsive toggle position */
+@media (max-width: 480px) { .theme-toggle { top: 10px; right: 10px; } .theme-toggle button { padding: 8px 12px; font-size: 1rem; } }
