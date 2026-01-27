@@ -769,3 +769,6 @@ button { transition: all 0.3s ease, background 0.5s ease; }
 
 /* theme icon button size */
 .theme-toggle button { min-width: 50px; font-size: 1.2rem; }
+
+/* add toggle separator */
+.theme-toggle::after { content: ''; position: absolute; width: 1px; height: 20px; background: var(--ox-red-medium); left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0; }
