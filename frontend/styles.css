@@ -775,3 +775,6 @@ button { transition: all 0.3s ease, background 0.5s ease; }
 
 /* dark mode emoji glow */
 body.dark-mode .floating-emoji { filter: drop-shadow(0 0 8px rgba(201, 64, 64, 0.4)); }
+
+/* light mode emoji filter */
+body.light-mode .floating-emoji { filter: drop-shadow(0 0 5px rgba(107, 28, 28, 0.3)); opacity: 0.4; }
