@@ -808,3 +808,6 @@ body.light-mode header { background: rgba(255, 245, 245, 0.5); backdrop-filter: 
 
 /* dark mode footer */
 body.dark-mode footer { color: #c9a0a0; }
+
+/* light mode footer */
+body.light-mode footer { color: #6b2020; }
