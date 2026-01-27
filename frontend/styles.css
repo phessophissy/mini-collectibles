@@ -781,3 +781,6 @@ body.light-mode .floating-emoji { filter: drop-shadow(0 0 5px rgba(107, 28, 28, 
 
 /* add ox red border utilities */
 .ox-border { border: 2px solid var(--ox-red-medium); } .ox-border-light { border: 1px solid var(--ox-red-light); }
+
+/* add ox red bg utilities */
+.ox-bg { background: var(--ox-red-medium); } .ox-bg-dark { background: var(--ox-red-dark); }
