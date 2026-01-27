@@ -613,3 +613,6 @@ body { background-attachment: fixed; }
 
 /* add dark mode CSS variables */
 :root { --bg-dark: #1a0808; --bg-dark-secondary: #2d1010; --text-dark: #f5e6e6; --text-dark-muted: #c9a0a0; }
+
+/* add light mode CSS variables */
+:root { --bg-light: #fff5f5; --bg-light-secondary: #ffe8e8; --text-light: #4a1515; --text-light-muted: #6b2020; }
