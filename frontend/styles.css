@@ -625,3 +625,6 @@ body { background-attachment: fixed; }
 
 /* add toggle button hover effect */
 .theme-toggle button:hover { transform: scale(1.05); box-shadow: 0 4px 12px rgba(107, 28, 28, 0.4); }
+
+/* add active toggle button state */
+.theme-toggle button.active { background: var(--ox-red-medium); color: white; }
