@@ -676,3 +676,6 @@ body.light-mode .subtitle { color: #6b2020; }
 
 /* update connect button to ox red */
 #connect-btn { background: linear-gradient(90deg, var(--ox-red-medium), var(--ox-red-dark)); border-color: var(--ox-red-accent); }
+
+/* update mint button to ox red */
+#mint-btn { background: linear-gradient(90deg, var(--ox-red-medium), var(--ox-red-dark)); border-color: var(--ox-red-accent); }
