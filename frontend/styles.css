@@ -811,3 +811,6 @@ body.dark-mode footer { color: #c9a0a0; }
 
 /* light mode footer */
 body.light-mode footer { color: #6b2020; }
+
+/* add ox red gradient text */
+.ox-gradient-text { background: linear-gradient(90deg, var(--ox-red-light), var(--ox-red-accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
