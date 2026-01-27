@@ -805,3 +805,6 @@ body.light-mode header { background: rgba(255, 245, 245, 0.5); backdrop-filter: 
 
 /* toggle button ripple */
 .theme-toggle button:active::before { opacity: 1; }
+
+/* dark mode footer */
+body.dark-mode footer { color: #c9a0a0; }
