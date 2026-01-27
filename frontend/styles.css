@@ -631,3 +631,6 @@ body { background-attachment: fixed; }
 
 /* add inactive toggle button state */
 .theme-toggle button:not(.active) { background: transparent; color: var(--ox-red-medium); }
+
+/* add dark mode body styles */
+body.dark-mode { background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%); color: var(--text-dark); }
