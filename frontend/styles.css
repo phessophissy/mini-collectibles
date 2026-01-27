@@ -637,3 +637,6 @@ body.dark-mode { background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg
 
 /* add light mode body styles */
 body.light-mode { background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-light-secondary) 100%); color: var(--text-light); }
+
+/* update body to ox red gradient */
+body { background: linear-gradient(135deg, #6b1c1c 0%, #8b2525 50%, #5a1818 100%); }
