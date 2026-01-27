@@ -652,3 +652,6 @@ body.dark-mode .stat { background: rgba(45, 16, 16, 0.9); border-color: rgba(201
 
 /* light mode stat card */
 body.light-mode .stat { background: rgba(255, 245, 245, 0.9); border-color: rgba(107, 28, 28, 0.3); }
+
+/* dark mode modal background */
+body.dark-mode .modal { background: rgba(26, 8, 8, 0.95); }
