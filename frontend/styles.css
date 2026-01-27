@@ -715,3 +715,6 @@ body.light-mode .price { color: #6b2020; }
 
 /* update legendary gold */
 .rarity.legendary { background: rgba(255, 215, 0, 0.2); color: #ffd700; border-color: #daa520; }
+
+/* dark mode stat label */
+body.dark-mode .stat-label { color: #c9a0a0; }
