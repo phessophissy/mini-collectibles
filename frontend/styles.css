@@ -730,3 +730,6 @@ body.light-mode .stat-value { color: #4a1515; }
 
 /* update close modal button */
 #close-modal { background: linear-gradient(90deg, var(--ox-red-medium), var(--ox-red-dark)); border-color: var(--ox-red-accent); }
+
+/* dark mode wallet address */
+body.dark-mode #wallet-address { background: rgba(201, 64, 64, 0.15); color: #c9a0a0; }
