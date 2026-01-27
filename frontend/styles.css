@@ -610,3 +610,6 @@ body { background-attachment: fixed; }
     --ox-red-light: #a83232;
     --ox-red-accent: #c94040;
 }
+
+/* add dark mode CSS variables */
+:root { --bg-dark: #1a0808; --bg-dark-secondary: #2d1010; --text-dark: #f5e6e6; --text-dark-muted: #c9a0a0; }
