@@ -820,3 +820,6 @@ body.light-mode footer { color: #6b2020; }
 
 /* add theme preference detection */
 @media (prefers-color-scheme: dark) { body:not(.light-mode):not(.dark-mode) { background: linear-gradient(135deg, #6b1c1c 0%, #3d1010 100%); } }
+
+/* add ox red glow animation */
+@keyframes oxGlow { 0%, 100% { box-shadow: 0 0 10px rgba(201, 64, 64, 0.3); } 50% { box-shadow: 0 0 25px rgba(201, 64, 64, 0.6); } }
