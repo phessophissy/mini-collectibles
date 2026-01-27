@@ -616,3 +616,6 @@ body { background-attachment: fixed; }
 
 /* add light mode CSS variables */
 :root { --bg-light: #fff5f5; --bg-light-secondary: #ffe8e8; --text-light: #4a1515; --text-light-muted: #6b2020; }
+
+/* add theme toggle container styles */
+.theme-toggle { position: fixed; top: 20px; right: 20px; z-index: 1000; display: flex; gap: 8px; }
