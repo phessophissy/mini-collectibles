@@ -700,3 +700,6 @@ body.light-mode .mint-card h2 { color: #4a1515; }
 
 /* dark mode price color */
 body.dark-mode .price { color: #c9a0a0; }
+
+/* light mode price color */
+body.light-mode .price { color: #6b2020; }
