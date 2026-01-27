@@ -742,3 +742,6 @@ body.light-mode #wallet-address { background: rgba(107, 28, 28, 0.1); color: #6b
 
 /* update selection color ox red */
 ::selection { background: rgba(201, 64, 64, 0.4); color: #fff; }
+
+/* update focus ring ox red */
+button:focus { outline-color: var(--ox-red-accent); }
