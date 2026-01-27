@@ -640,3 +640,6 @@ body.light-mode { background: linear-gradient(135deg, var(--bg-light) 0%, var(--
 
 /* update body to ox red gradient */
 body { background: linear-gradient(135deg, #6b1c1c 0%, #8b2525 50%, #5a1818 100%); }
+
+/* add dark mode card background */
+body.dark-mode .mint-card { background: linear-gradient(135deg, rgba(45, 16, 16, 0.95) 0%, rgba(26, 8, 8, 0.98) 100%); }
