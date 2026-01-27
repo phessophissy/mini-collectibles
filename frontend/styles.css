@@ -706,3 +706,6 @@ body.light-mode .price { color: #6b2020; }
 
 /* update rarity common ox red */
 .rarity.common { background: rgba(107, 28, 28, 0.2); color: #c9a0a0; border-color: #8b2525; }
+
+/* update rarity rare ox red */
+.rarity.rare { background: rgba(100, 149, 237, 0.2); color: #6495ed; border-color: #4169e1; }
