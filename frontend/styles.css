@@ -661,3 +661,6 @@ body.light-mode .modal { background: rgba(255, 245, 245, 0.95); }
 
 /* dark mode modal content */
 body.dark-mode .modal-content { background: linear-gradient(135deg, #2d1010 0%, #1a0808 100%); border-color: var(--ox-red-accent); }
+
+/* light mode modal content */
+body.light-mode .modal-content { background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%); border-color: var(--ox-red-medium); }
