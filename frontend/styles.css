@@ -712,3 +712,6 @@ body.light-mode .price { color: #6b2020; }
 
 /* update rarity epic ox red */
 .rarity.epic { background: rgba(186, 85, 211, 0.2); color: #ba55d3; border-color: #9932cc; }
+
+/* update legendary gold */
+.rarity.legendary { background: rgba(255, 215, 0, 0.2); color: #ffd700; border-color: #daa520; }
