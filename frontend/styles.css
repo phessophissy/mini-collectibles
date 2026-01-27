@@ -826,3 +826,6 @@ body.light-mode footer { color: #6b2020; }
 
 /* apply glow to active toggle */
 .theme-toggle button.active { animation: oxGlow 2s ease-in-out infinite; }
+
+/* finalize ox red dark light theme */
+body { --current-theme: 'default'; }
