@@ -602,3 +602,11 @@ body { background-attachment: fixed; }
 
 /* Grey Emoticons Theme Finalized */
 .emoticons-enabled { pointer-events: none; }
+
+/* Ox Red Theme with Dark/Light Mode Support */
+:root {
+    --ox-red-dark: #6b1c1c;
+    --ox-red-medium: #8b2525;
+    --ox-red-light: #a83232;
+    --ox-red-accent: #c94040;
+}
