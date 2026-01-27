@@ -622,3 +622,6 @@ body { background-attachment: fixed; }
 
 /* add toggle button base styles */
 .theme-toggle button { padding: 10px 16px; border-radius: 8px; border: 2px solid var(--ox-red-medium); cursor: pointer; font-weight: 600; transition: all 0.3s ease; }
+
+/* add toggle button hover effect */
+.theme-toggle button:hover { transform: scale(1.05); box-shadow: 0 4px 12px rgba(107, 28, 28, 0.4); }
