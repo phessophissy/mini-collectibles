@@ -1,15 +1,15 @@
 # 🌺 Mini Collectibles
 
-A beautiful NFT collectibles platform on Base Chain featuring a stunning **Pink Hibiscus Theme** with transparent, colorful flower backgrounds.
+A beautiful NFT collectibles platform on Base Chain featuring a stunning **Metallic Engineering Theme** with transparent, colorful flower backgrounds.
 
-![Theme](https://img.shields.io/badge/Theme-Pink%20Hibiscus-ff69b4)
+![Theme](https://img.shields.io/badge/Theme-Metallic%20Engineering-C0C0C0)
 ![Base Chain](https://img.shields.io/badge/Chain-Base-0052FF)
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.20-363636)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 🌸 Features
 
-- **Beautiful Pink Hibiscus Theme** - Stunning pink gradient with animated hibiscus flower background
+- **Beautiful Metallic Engineering Theme** - Stunning metallic gradient with animated engineering tools background
 - **Transparent Colorful Flowers** - Multi-layered SVG hibiscus flowers with varying opacity
 - **Animated Background** - Gentle floating flower animation
 - **Glassmorphism UI** - Modern frosted glass effect on cards

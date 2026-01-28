@@ -27,18 +27,18 @@ async function connectWallet() {
         alert("Please install MetaMask!");
         return;
     }
-    
+
     try {
-        const accounts = await window.ethereum.request({ 
-            method: "eth_requestAccounts" 
+        const accounts = await window.ethereum.request({
+            method: "eth_requestAccounts"
         });
-        
+
         await switchToBase();
-        
+
         provider = new ethers.BrowserProvider(window.ethereum);
         signer = await provider.getSigner();
         contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, signer);
-        
+
         updateUI(accounts[0]);
     } catch (error) {
         console.error("Connection failed:", error);
@@ -75,19 +75,19 @@ async function mintCollectible() {
         alert("Please connect your wallet first!");
         return;
     }
-    
+
     try {
         const mintBtn = document.getElementById("mint-btn");
         mintBtn.disabled = true;
         mintBtn.textContent = "Minting...";
-        
+
         const tx = await contract.mint({
             value: ethers.parseEther(MINT_PRICE)
         });
-        
+
         mintBtn.textContent = "Confirming...";
         const receipt = await tx.wait();
-        
+
         // Parse event to get token info
         const event = receipt.logs.find(log => log.fragment?.name === "CollectibleMinted");
         if (event) {
@@ -95,7 +95,7 @@ async function mintCollectible() {
             const collectibleType = event.args[2];
             showMintSuccess(tokenId, collectibleType);
         }
-        
+
         await updateStats();
         mintBtn.disabled = false;
         mintBtn.textContent = "Mint Collectible (0.000012 ETH)";
@@ -112,9 +112,9 @@ async function mintCollectible() {
 function updateUI(address) {
     document.getElementById("connect-btn").textContent = "Connected";
     document.getElementById("connect-btn").disabled = true;
-    document.getElementById("wallet-address").textContent = 
+    document.getElementById("wallet-address").textContent =
         address.slice(0, 6) + "..." + address.slice(-4);
-    
+
     document.getElementById("mint-section").style.display = "block";
     updateStats();
 }
@@ -122,12 +122,12 @@ function updateUI(address) {
 // Update stats display
 async function updateStats() {
     if (!contract) return;
-    
+
     try {
         const totalSupply = await contract.totalSupply();
         const userAddress = await signer.getAddress();
         const userBalance = await contract.balanceOf(userAddress);
-        
+
         document.getElementById("total-supply").textContent = totalSupply.toString();
         document.getElementById("your-balance").textContent = userBalance.toString();
     } catch (error) {
@@ -140,11 +140,11 @@ function showMintSuccess(tokenId, collectibleType) {
     const modal = document.getElementById("success-modal");
     const rarityName = RARITY_TYPES[collectibleType];
     const rarityColor = RARITY_COLORS[collectibleType];
-    
+
     document.getElementById("minted-token-id").textContent = tokenId.toString();
     document.getElementById("minted-rarity").textContent = rarityName;
     document.getElementById("minted-rarity").style.color = rarityColor;
-    
+
     modal.style.display = "flex";
 }
 
@@ -160,33 +160,33 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("close-modal")?.addEventListener("click", closeModal);
 });
 
-// Floating Emoticons Animation
-const emojis = ['😀', '😎', '🎉', '🎨', '💎', '🌟', '✨', '🔥', '💫', '🎭', '🎪', '🎢', '🎡', '🎠', '🎯', '🎲', '🎮', '🕹️', '🎸', '🎺', '🎷', '🥁', '🎹', '🎵', '🎶', '💖', '💝', '💗', '💓', '💕', '🦋', '🌈', '🌸', '🌺', '🌻', '🌼', '🍀', '🍁', '🍂', '🍃'];
+// Floating Engineering Tools Animation
+const emojis = ['🔧', '🔨', '⚙️', '🪛', '🔩', '🛠️', '⚡', '🔌', '💡', '🔬', '🔭', '🧲', '🧪', '📐', '📏', '✏️', '🪚', '⛏️', '🎚️', '🔋', '⚗️', '🔗', '🪝', '🧰', '🔶', '🔷', '⬡', '⬢', '◈', '◇'];
 
 function createFloatingEmoji() {
     const container = document.getElementById('emoji-container');
     if (!container) return;
-    
+
     const emoji = document.createElement('span');
     emoji.className = 'floating-emoji';
     emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-    
+
     // Random position
     emoji.style.left = Math.random() * 100 + '%';
-    
+
     // Random size
     const size = 1 + Math.random() * 2;
     emoji.style.fontSize = size + 'rem';
-    
+
     // Random animation duration
     const duration = 8 + Math.random() * 12;
     emoji.style.animationDuration = duration + 's';
-    
+
     // Random delay
     emoji.style.animationDelay = Math.random() * 5 + 's';
-    
+
     container.appendChild(emoji);
-    
+
     // Remove after animation
     setTimeout(() => {
         emoji.remove();
@@ -206,14 +206,14 @@ function initThemeToggle() {
     const lightBtn = document.getElementById('light-btn');
     const darkBtn = document.getElementById('dark-btn');
     const body = document.body;
-    
+
     // Load saved theme preference
     const savedTheme = localStorage.getItem('theme') || 'light';
     applyTheme(savedTheme);
-    
+
     lightBtn.addEventListener('click', () => applyTheme('light'));
     darkBtn.addEventListener('click', () => applyTheme('dark'));
-    
+
     function applyTheme(theme) {
         body.classList.remove('light-mode', 'dark-mode');
         body.classList.add(theme + '-mode');
