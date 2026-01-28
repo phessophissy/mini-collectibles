@@ -9,7 +9,7 @@ A beautiful NFT collectibles platform on Base Chain featuring a stunning **Metal
 
 ## 🌸 Features
 
-- **Beautiful Metallic Engineering Theme** - Stunning metallic gradient with animated hibiscus flower background
+- **Beautiful Metallic Engineering Theme** - Stunning metallic gradient with animated engineering tools background
 - **Transparent Colorful Flowers** - Multi-layered SVG hibiscus flowers with varying opacity
 - **Animated Background** - Gentle floating flower animation
 - **Glassmorphism UI** - Modern frosted glass effect on cards
