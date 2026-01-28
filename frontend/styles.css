@@ -498,3 +498,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .steel-gradient {
     background: linear-gradient(135deg, #43464B 0%, #2C3539 50%, #1E2022 100%);
 }
+
+/* Gunmetal Gradient Mixin */
+.gunmetal-gradient {
+    background: linear-gradient(180deg, #43464B 0%, #2C3539 100%);
+}
