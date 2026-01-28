@@ -543,3 +543,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
+
+/* Rivet Decoration */
+.rivet {
+    position: relative;
+}
+.rivet::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle at 30% 30%, #C0C0C0, #43464B);
+    border-radius: 50%;
+}
