@@ -566,3 +566,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
     );
     border: 1px solid #5a5a5a;
 }
+
+/* Engineering Grid Pattern */
+.engineering-grid {
+    background-image: 
+        linear-gradient(rgba(192, 192, 192, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(192, 192, 192, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
