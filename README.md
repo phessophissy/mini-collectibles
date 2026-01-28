@@ -2,7 +2,7 @@
 
 A beautiful NFT collectibles platform on Base Chain featuring a stunning **Metallic Engineering Theme** with transparent, colorful flower backgrounds.
 
-![Theme](https://img.shields.io/badge/Theme-Pink%20Hibiscus-ff69b4)
+![Theme](https://img.shields.io/badge/Theme-Metallic%20Engineering-C0C0C0)
 ![Base Chain](https://img.shields.io/badge/Chain-Base-0052FF)
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.20-363636)
 ![License](https://img.shields.io/badge/License-MIT-green)
