@@ -503,3 +503,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .gunmetal-gradient {
     background: linear-gradient(180deg, #43464B 0%, #2C3539 100%);
 }
+
+/* Brushed Metal Effect */
+.brushed-metal {
+    background: linear-gradient(90deg, 
+        rgba(255,255,255,0.1) 0%, 
+        rgba(255,255,255,0) 50%, 
+        rgba(255,255,255,0.1) 100%
+    );
+}
