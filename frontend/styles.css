@@ -468,3 +468,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .metallic-border { border: 2px solid #71797E; }
 .metallic-shadow { box-shadow: 0 4px 12px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1); }
 .chrome-btn { background: linear-gradient(180deg, #71797E 0%, #43464B 100%); }
+
+/* Metallic Wrench SVG Pattern */
+.wrench-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath opacity='0.08' fill='%23C0C0C0' d='M50 25L55 45H45L50 25zM45 45L30 60L35 65L50 50L65 65L70 60L55 45H45z'/%3E%3C/svg%3E");
+}
