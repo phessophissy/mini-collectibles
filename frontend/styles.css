@@ -624,3 +624,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* Metallic Theme Complete */
 .metallic-theme-enabled { background-color: var(--metallic-gunmetal); }
+
+/* Engineering Tools Float Complete */
+.engineering-tools-enabled { pointer-events: none; }
