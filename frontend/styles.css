@@ -532,3 +532,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
     box-shadow: 0 0 20px rgba(192, 192, 192, 0.3), 
                 0 0 40px rgba(192, 192, 192, 0.1);
 }
+
+/* Blue Steel Effect */
+.blue-steel {
+    background: linear-gradient(135deg, #5DA9E9 0%, #3A6B99 50%, #2C4B6E 100%);
+}
