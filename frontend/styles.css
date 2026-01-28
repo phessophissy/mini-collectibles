@@ -493,3 +493,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .chrome-gradient {
     background: linear-gradient(180deg, #E5E4E2 0%, #C0C0C0 25%, #71797E 50%, #C0C0C0 75%, #E5E4E2 100%);
 }
+
+/* Steel Gradient Mixin */
+.steel-gradient {
+    background: linear-gradient(135deg, #43464B 0%, #2C3539 50%, #1E2022 100%);
+}
