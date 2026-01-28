@@ -574,3 +574,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
         linear-gradient(90deg, rgba(192, 192, 192, 0.03) 1px, transparent 1px);
     background-size: 20px 20px;
 }
+
+/* Tool Icon Filter */
+.tool-icon {
+    filter: drop-shadow(0 0 3px rgba(192, 192, 192, 0.5));
+}
