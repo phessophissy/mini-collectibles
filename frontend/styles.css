@@ -587,3 +587,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+/* Industrial Warning Stripe */
+.warning-stripe {
+    background: repeating-linear-gradient(
+        45deg,
+        #CFB53B,
+        #CFB53B 10px,
+        #2C3539 10px,
+        #2C3539 20px
+    );
+}
