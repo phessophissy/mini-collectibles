@@ -6,6 +6,9 @@
 }
 
 :root {
+    /* Metallic Color Palette - Primary */
+    --metallic-dark: #1E2022;
+    --metallic-gunmetal: #2C3539;
     /* Metallic Color Palette */
     --metallic-dark: #1E2022;
     --metallic-gunmetal: #2C3539;
