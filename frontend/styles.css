@@ -512,3 +512,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
         rgba(255,255,255,0.1) 100%
     );
 }
+
+/* Metal Shine Animation */
+@keyframes metalShine {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
