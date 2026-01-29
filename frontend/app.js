@@ -36,6 +36,11 @@ async function connectWallet() {
         await switchToBase();
 
         provider = new ethers.BrowserProvider(window.ethereum);
+        const network = await provider.getNetwork();
+        if (network.chainId !== 8453n) {
+            alert("Please switch to Base Mainnet");
+            return;
+        }
         signer = await provider.getSigner();
         contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, signer);
 
